@@ -12,13 +12,13 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="border-t border-border/50 bg-navy-deep">
+    <footer className="border-t border-border/50 bg-primary text-primary-foreground">
       {/* Trust strip */}
-      <div className="border-b border-border/30">
+      <div className="border-b border-primary-foreground/20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8">
           <div className="flex flex-wrap justify-center gap-8 md:gap-16">
             {trustElements.map((item) => (
-              <span key={item} className="text-xs tracking-[0.3em] uppercase text-muted-foreground">
+              <span key={item} className="text-xs tracking-[0.3em] uppercase text-primary-foreground/70">
                 {item}
               </span>
             ))}
@@ -32,10 +32,10 @@ const Footer: React.FC = () => {
           {/* Logo and tagline */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <DaisyMotif size={24} className="text-primary" />
-              <span className="font-serif text-lg text-foreground">KPS Global Solutions</span>
+              <DaisyMotif size={24} className="text-accent" />
+              <span className="font-serif text-lg text-primary-foreground">KPS Global Solutions</span>
             </div>
-            <p className="text-sm text-muted-foreground italic font-serif">
+            <p className="text-sm text-primary-foreground/70 italic font-serif">
               {t('footer.tagline')}
             </p>
           </div>
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="text-primary-foreground/60 hover:text-accent transition-colors"
               aria-label="LinkedIn"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
               href="https://wa.me/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="text-primary-foreground/60 hover:text-accent transition-colors"
               aria-label="WhatsApp"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -71,11 +71,11 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Bottom line */}
-        <div className="mt-12 pt-8 border-t border-border/30 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-muted-foreground">
+        <div className="mt-12 pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-xs text-primary-foreground/60">
             {t('footer.registered')}
           </p>
-          <p className="text-xs text-muted-foreground">
+          <p className="text-xs text-primary-foreground/60">
             © {new Date().getFullYear()} KPS Global Solutions. {t('footer.rights')}
           </p>
         </div>
