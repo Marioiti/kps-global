@@ -12,6 +12,8 @@ const MandateForm: React.FC = () => {
     role: '',
     commodity: '',
     financial: '',
+    contactPerson: '',
+    contactChannel: '',
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -131,6 +133,38 @@ const MandateForm: React.FC = () => {
               <option value="bcl">{t('mandate.financialBCL')}</option>
               <option value="sblc">{t('mandate.financialSBLC')}</option>
             </select>
+          </div>
+
+          {/* Contact Person */}
+          <div>
+            <label className="block text-xs tracking-widest uppercase text-muted-foreground mb-2">
+              {t('mandate.contactPerson')}
+            </label>
+            <input
+              type="text"
+              required
+              maxLength={200}
+              placeholder={t('mandate.contactPersonPlaceholder')}
+              value={formData.contactPerson}
+              onChange={(e) => setFormData({ ...formData, contactPerson: e.target.value })}
+              className={inputClasses}
+            />
+          </div>
+
+          {/* Contact Channel */}
+          <div>
+            <label className="block text-xs tracking-widest uppercase text-muted-foreground mb-2">
+              {t('mandate.contactChannel')}
+            </label>
+            <input
+              type="text"
+              required
+              maxLength={200}
+              placeholder={t('mandate.contactChannelPlaceholder')}
+              value={formData.contactChannel}
+              onChange={(e) => setFormData({ ...formData, contactChannel: e.target.value })}
+              className={inputClasses}
+            />
           </div>
 
           {/* Agreement checkbox */}
