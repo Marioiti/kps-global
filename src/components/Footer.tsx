@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import DaisyMotif from './DaisyMotif';
+import kpsLogo from '@/assets/kps-logo.png';
 
 const Footer: React.FC = () => {
   const { t } = useLanguage();
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
           {/* Logo and tagline */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <DaisyMotif size={24} className="text-accent" />
+              <img src={kpsLogo} alt="KPS Global Solutions" className="h-8 w-auto" />
               <span className="font-serif text-lg text-primary-foreground">KPS Global Solutions</span>
             </div>
             <p className="text-sm text-primary-foreground/70 italic font-serif">
