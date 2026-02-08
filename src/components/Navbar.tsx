@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Language } from '@/i18n/translations';
-import DaisyMotif from './DaisyMotif';
+import kpsLogo from '@/assets/kps-logo.png';
 import { Menu, X } from 'lucide-react';
 
 const languages: { code: Language; label: string }[] = [
@@ -34,8 +34,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
-            <DaisyMotif size={28} className="text-primary transition-transform duration-500 group-hover:rotate-90" />
-            <span className="font-serif text-lg tracking-wide text-foreground">KPS</span>
+            <img src={kpsLogo} alt="KPS Global Solutions" className="h-10 w-auto transition-transform duration-500 group-hover:scale-105" />
           </a>
 
           {/* Desktop nav */}

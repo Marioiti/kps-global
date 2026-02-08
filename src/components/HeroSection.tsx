@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import DaisyMotif from './DaisyMotif';
+import kpsLogo from '@/assets/kps-logo.png';
 import { ArrowDown } from 'lucide-react';
 
 const HeroSection: React.FC = () => {
@@ -9,8 +9,8 @@ const HeroSection: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background motif */}
-      <div className="absolute inset-0 flex items-center justify-center opacity-[0.03]">
-        <DaisyMotif size={800} animate className="text-primary" />
+      <div className="absolute inset-0 flex items-center justify-center opacity-[0.04]">
+        <img src={kpsLogo} alt="" className="w-[600px] h-[600px] object-contain animate-petal-rotate" />
       </div>
 
       {/* Subtle grid */}
