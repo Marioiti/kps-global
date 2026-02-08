@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
-            <img src={kpsLogo} alt="KPS Global Solutions" className="h-10 w-auto transition-transform duration-500 group-hover:scale-105" />
+            <img src={kpsLogo} alt="KPS Global Solutions" className="h-14 w-auto transition-transform duration-500 group-hover:scale-105" />
           </a>
 
           {/* Desktop nav */}
