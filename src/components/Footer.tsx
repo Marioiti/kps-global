@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
           <div className="flex items-center gap-6">
             {/* LinkedIn */}
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/kpsglobal"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary-foreground/60 hover:text-accent transition-colors"
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/"
+              href="https://wa.me/79145574000"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary-foreground/60 hover:text-accent transition-colors"
