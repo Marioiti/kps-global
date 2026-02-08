@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background motif */}
       <div className="absolute inset-0 flex items-center justify-center opacity-[0.04]">
-        <img src={kpsLogo} alt="" className="w-[600px] h-[600px] object-contain animate-petal-rotate" />
+        <img src={kpsLogo} alt="" className="w-[800px] h-[800px] object-contain animate-petal-rotate" />
       </div>
 
       {/* Subtle grid */}
