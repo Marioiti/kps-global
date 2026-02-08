@@ -35,6 +35,7 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
             <img src={kpsLogo} alt="KPS Global Solutions" className="h-14 w-auto transition-transform duration-500 group-hover:scale-105" />
+            <span className="text-lg font-semibold tracking-wide text-foreground">KPS</span>
           </a>
 
           {/* Desktop nav */}
