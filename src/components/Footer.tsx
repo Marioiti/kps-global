@@ -32,8 +32,8 @@ const Footer: React.FC = () => {
           {/* Logo and tagline */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src={kpsLogo} alt="KPS Global Solutions" className="h-8 w-auto" />
-              <span className="font-serif text-lg text-primary-foreground">KPS Global Solutions</span>
+              <img src={kpsLogo} alt={t('footer.companyName')} className="h-8 w-auto" />
+              <span className="font-serif text-lg text-primary-foreground">{t('footer.companyName')}</span>
             </div>
             <p className="text-sm text-primary-foreground/70 italic font-serif">
               {t('footer.tagline')}
@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
             {t('footer.registered')}
           </p>
           <p className="text-xs text-primary-foreground/60">
-            © {new Date().getFullYear()} KPS Global Solutions. {t('footer.rights')}
+            © {new Date().getFullYear()} {t('footer.companyName')}. {t('footer.rights')}
           </p>
         </div>
       </div>

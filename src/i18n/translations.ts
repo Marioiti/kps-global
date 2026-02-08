@@ -39,12 +39,22 @@ export const translations: Record<Language, Record<string, string>> = {
 
     'services.energy.title': 'Energy & Fuel',
     'services.energy.desc': 'EN590 (10ppm), Jet A1, D6, ESPO, Urals. Direct access to 9 verified suppliers across 25 operational procedures.',
+    'services.energy.details': 'EN590 (10ppm diesel), Jet A1, D6 fuel oil, and crude oil (ESPO, Urals). Direct access to 9 verified suppliers and 25 operational procedures. Structured documentation and delivery protocols for institutional clients.',
 
-    'services.gas.title': 'Gas',
+    'services.gas.title': 'Gas (LNG/LPG)',
     'services.gas.desc': 'LNG/LPG project-based supply with structured 30% discount models. Long-term contractual frameworks for institutional buyers.',
+    'services.gas.details': 'LNG and LPG supply under dual-contract structure: FOB commodity contract plus separate Logistics contract. 100% price transparency. Project-based supply with structured 30% discount models for institutional buyers.',
 
-    'services.metals.title': 'Metals',
+    'services.metals.title': 'Strategic Metals',
     'services.metals.desc': 'Aluminum (A7) and Sulphur contractual supply. Standardized delivery protocols with full compliance documentation.',
+    'services.metals.details': 'Aluminum A7 and Sulphur contractual supply. Paymaster security for the entire transaction chain. Standardized delivery protocols with full compliance documentation. Escrow and title transfer under institutional-grade procedures.',
+
+    'services.algorithm.title': 'The KPS Algorithm',
+    'services.algorithm.step1': 'Screening: Entity verification, compliance check, and background assessment.',
+    'services.algorithm.step2': 'Structure: LOI, ICPO, and financial readiness verification (POF/BCL/SBLC).',
+    'services.algorithm.step3': 'Compliance: KYC/AML procedures, sanctions screening, and jurisdiction analysis.',
+    'services.algorithm.step4': 'Mandate: Contract terms, payment mechanisms, and logistics planning.',
+    'services.algorithm.step5': 'Execution: JVTA signing, inspection, title transfer, and payment settlement.',
 
     // Capabilities
     'capabilities.sectionLabel': 'Capabilities',
@@ -132,6 +142,7 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
 4. Liquidated Damages: Any breach of the non-circumvention or payment clauses shall trigger an immediate penalty of USD 100,000 plus 100% of the total projected commissions.
 
 5. Jurisdiction: These terms are governed by the laws of Hong Kong. Any disputes shall be resolved via ICC Arbitration in Hong Kong.`,
+    'algorithm.termsTitle': 'KPS GLOBAL SOLUTIONS: TERMS OF SERVICE & TRANSACTION ALGORITHM',
     'algorithm.scrollHint': 'Scroll to the end to enable the Accept button.',
     'mandate.submit': 'Request a Strategic Briefing',
     'mandate.submitting': 'Sending…',
@@ -139,6 +150,7 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'mandate.error': 'Failed to send. Please try again or contact us directly.',
 
     // Footer
+    'footer.companyName': 'KPS Global Solutions',
     'footer.tagline': 'Structuring the Essence of Global Trade',
     'footer.registered': 'PT Kusuma Petak Sari. Registered in Indonesia.',
     'footer.rights': 'All rights reserved.',
@@ -149,6 +161,10 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     // History
     'history.badge': 'Since 2017',
     'history.text': 'From BRIK to ARION, our journey refined what matters. PT Kusuma Petak Sari is the distilled identity—pure structure, zero noise.',
+
+    // NotFound
+    'notFound.title': 'Oops! Page not found',
+    'notFound.backHome': 'Return to Home',
   },
 
   ru: {
@@ -185,12 +201,22 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
 
     'services.energy.title': 'Энергоносители',
     'services.energy.desc': 'EN590 (10ppm), Jet A1, D6, ESPO, Urals. Прямой доступ к 9 верифицированным поставщикам через 25 операционных процедур.',
+    'services.energy.details': 'EN590 (10ppm дизель), Jet A1, D6 мазут, сырая нефть (ESPO, Urals). Прямой доступ к 9 верифицированным поставщикам и 25 операционным процедурам. Структурированная документация и протоколы поставки для институциональных клиентов.',
 
-    'services.gas.title': 'Газ',
+    'services.gas.title': 'Газ (СПГ/СУГ)',
     'services.gas.desc': 'Проектные поставки СПГ/СУГ с моделями скидки 30%. Долгосрочные контрактные рамки для институциональных покупателей.',
+    'services.gas.details': 'Поставки СПГ и СУГ по двухконтрактной структуре: контракт FOB на товар плюс отдельный контракт на логистику. 100% ценовая прозрачность. Проектные поставки со структурированными моделями скидки 30% для институциональных покупателей.',
 
-    'services.metals.title': 'Металлы',
+    'services.metals.title': 'Стратегические металлы',
     'services.metals.desc': 'Контрактные поставки алюминия (А7) и серы. Стандартизированные протоколы поставки с полной комплаенс-документацией.',
+    'services.metals.details': 'Контрактные поставки алюминия А7 и серы. Защита пеймастера для всей транзакционной цепочки. Стандартизированные протоколы поставки с полной комплаенс-документацией. Эскроу и передача титула по процедурам институционального уровня.',
+
+    'services.algorithm.title': 'Алгоритм KPS',
+    'services.algorithm.step1': 'Скрининг: Верификация компании, проверка комплаенса и оценка репутации.',
+    'services.algorithm.step2': 'Структура: LOI, ICPO и верификация финансовой готовности (POF/BCL/SBLC).',
+    'services.algorithm.step3': 'Комплаенс: Процедуры KYC/AML, скрининг санкций и юрисдикционный анализ.',
+    'services.algorithm.step4': 'Мандат: Условия контракта, платёжные механизмы и логистическое планирование.',
+    'services.algorithm.step5': 'Исполнение: Подписание JVTA, инспекция, передача титула и расчёт.',
 
     'capabilities.sectionLabel': 'Возможности',
     'capabilities.title': 'Архитектура сделок',
@@ -275,12 +301,14 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
 4. Штрафные санкции: Любое нарушение пунктов об обходе или невыплате влечет за собой немедленный штраф в размере 100 000 долларов США плюс 100% от общей суммы прогнозируемой комиссии.
 
 5. Юрисдикция: Настоящие условия регулируются законодательством Гонконга. Любые споры подлежат разрешению через арбитраж ICC в Гонконге.`,
+    'algorithm.termsTitle': 'KPS GLOBAL SOLUTIONS: УСЛОВИЯ ИСПОЛЬЗОВАНИЯ И ТРАНЗАКЦИОННЫЙ АЛГОРИТМ',
     'algorithm.scrollHint': 'Прокрутите до конца, чтобы активировать кнопку «Согласен».',
     'mandate.submit': 'Запросить стратегический брифинг',
     'mandate.submitting': 'Отправка…',
     'mandate.success': 'Мандат отправлен. Мы рассмотрим его в течение 48 рабочих часов.',
     'mandate.error': 'Не удалось отправить. Попробуйте ещё раз или свяжитесь с нами напрямую.',
 
+    'footer.companyName': 'KPS Global Solutions',
     'footer.tagline': 'Структурируя суть глобальной торговли',
     'footer.registered': 'PT Kusuma Petak Sari. Зарегистрирована в Индонезии.',
     'footer.rights': 'Все права защищены.',
@@ -290,6 +318,9 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
 
     'history.badge': 'С 2017 года',
     'history.text': 'От BRIK до ARION — наш путь отточил главное. PT Kusuma Petak Sari — это дистиллированная идентичность: чистая структура, нулевой шум.',
+
+    'notFound.title': 'Страница не найдена',
+    'notFound.backHome': 'Вернуться на главную',
   },
 
   zh: {
@@ -326,12 +357,22 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
 
     'services.energy.title': '能源与燃料',
     'services.energy.desc': 'EN590 (10ppm)、Jet A1、D6、ESPO、乌拉尔。直接接触9家验证供应商，跨越25个操作流程。',
+    'services.energy.details': 'EN590 (10ppm柴油)、Jet A1、D6燃料油和原油(ESPO、乌拉尔)。直接接触9家验证供应商和25个操作流程。为机构客户提供结构化文档和交付协议。',
 
-    'services.gas.title': '天然气',
+    'services.gas.title': '天然气 (LNG/LPG)',
     'services.gas.desc': '基于项目的LNG/LPG供应，结构化30%折扣模型。面向机构买家的长期合同框架。',
+    'services.gas.details': 'LNG和LPG采用双合同结构供应：FOB商品合同加独立物流合同。100%价格透明度。基于项目的供应，面向机构买家采用结构化30%折扣模型。',
 
-    'services.metals.title': '金属',
+    'services.metals.title': '战略金属',
     'services.metals.desc': '铝（A7）和硫磺合同供应。标准化交付协议，配备完整合规文件。',
+    'services.metals.details': '铝A7和硫磺合同供应。整个交易链的付款代理保护。标准化交付协议，配备完整合规文件。按机构级程序进行托管和产权转让。',
+
+    'services.algorithm.title': 'KPS算法',
+    'services.algorithm.step1': '筛选：实体验证、合规检查和背景评估。',
+    'services.algorithm.step2': '结构：LOI、ICPO和财务准备验证（POF/BCL/SBLC）。',
+    'services.algorithm.step3': '合规：KYC/AML程序、制裁筛查和管辖权分析。',
+    'services.algorithm.step4': '授权：合同条款、支付机制和物流规划。',
+    'services.algorithm.step5': '执行：签署JVTA、检验、产权转让和付款结算。',
 
     'capabilities.sectionLabel': '能力',
     'capabilities.title': '交易架构',
@@ -416,12 +457,14 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
 4. 违约金：任何违反禁止绕过或支付条款的行为将导致立即处以 100,000 美元 的罚款，外加预计总佣金的 100%。
 
 5. 管辖权：本条款受香港法律管辖。任何争议应通过香港国际商会 (ICC) 仲裁解决。`,
+    'algorithm.termsTitle': 'KPS GLOBAL SOLUTIONS: 服务条款与交易算法',
     'algorithm.scrollHint': '滚动至底部以启用「同意」按钮。',
     'mandate.submit': '请求战略简报',
     'mandate.submitting': '发送中…',
     'mandate.success': '委托已提交。我们将在48个工作小时内审核。',
     'mandate.error': '发送失败。请重试或直接联系我们。',
 
+    'footer.companyName': 'KPS Global Solutions',
     'footer.tagline': '构建全球贸易的本质',
     'footer.registered': 'PT Kusuma Petak Sari。注册于印度尼西亚。',
     'footer.rights': '版权所有。',
@@ -431,5 +474,8 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
 
     'history.badge': '始于2017年',
     'history.text': '从BRIK到ARION，我们的旅程提炼了核心。PT Kusuma Petak Sari是蒸馏的身份——纯粹结构、零噪音。',
+
+    'notFound.title': '页面未找到',
+    'notFound.backHome': '返回首页',
   },
 };

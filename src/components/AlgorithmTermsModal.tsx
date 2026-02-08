@@ -131,7 +131,7 @@ export const AlgorithmTermsModal: React.FC<AlgorithmTermsModalProps> = ({
 
   const handleDownloadPdf = useCallback(() => {
     const terms = t('algorithm.termsFull');
-    const title = 'KPS GLOBAL SOLUTIONS: TERMS OF SERVICE & TRANSACTION ALGORITHM';
+    const title = t('algorithm.termsTitle');
     const html = `
 <!DOCTYPE html>
 <html>
@@ -172,7 +172,7 @@ export const AlgorithmTermsModal: React.FC<AlgorithmTermsModalProps> = ({
       <DialogContent className="max-w-2xl max-h-[90vh] flex flex-col gap-4">
         <DialogHeader className="space-y-1">
           <DialogTitle className="text-lg font-serif pr-8 leading-tight text-foreground">
-            KPS GLOBAL SOLUTIONS: TERMS OF SERVICE & TRANSACTION ALGORITHM
+            {t('algorithm.termsTitle')}
           </DialogTitle>
         </DialogHeader>
 
