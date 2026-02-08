@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import DaisyMotif from './DaisyMotif';
+import AlgorithmTermsModal from './AlgorithmTermsModal';
 import { toast } from 'sonner';
+
+const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT;
 
 const MandateForm: React.FC = () => {
   const { t } = useLanguage();
   const [agreed, setAgreed] = useState(false);
+  const [termsModalOpen, setTermsModalOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     entity: '',
     role: '',
@@ -16,11 +21,39 @@ const MandateForm: React.FC = () => {
     contactChannel: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!agreed) return;
-    setSubmitted(true);
-    toast.success(t('mandate.success'));
+
+    if (!FORMSPREE_ENDPOINT) {
+      toast.error(t('mandate.error'));
+      return;
+    }
+
+    setSubmitting(true);
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          _subject: `Strategic Briefing Request - ${formData.entity}`,
+          entity: formData.entity,
+          role: formData.role,
+          commodity: formData.commodity,
+          financial: formData.financial,
+          contactPerson: formData.contactPerson,
+          contactChannel: formData.contactChannel,
+        }),
+      });
+
+      if (!res.ok) throw new Error('Submit failed');
+      setSubmitted(true);
+      toast.success(t('mandate.success'));
+    } catch {
+      toast.error(t('mandate.error'));
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const selectClasses =
@@ -178,17 +211,34 @@ const MandateForm: React.FC = () => {
               required
             />
             <label htmlFor="agree" className="text-sm text-muted-foreground cursor-pointer leading-relaxed">
-              {t('mandate.agree')}
+              {t('mandate.agreePrefix')}
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setTermsModalOpen(true);
+                }}
+                className="text-primary hover:underline underline-offset-2 font-medium"
+              >
+                {t('mandate.agreeLink')}
+              </button>
+              {t('mandate.agreeSuffix')}
             </label>
           </div>
+
+          <AlgorithmTermsModal
+            open={termsModalOpen}
+            onOpenChange={setTermsModalOpen}
+            onAccept={() => setAgreed(true)}
+          />
 
           {/* Submit */}
           <button
             type="submit"
-            disabled={!agreed}
+            disabled={!agreed || submitting}
             className="w-full py-4 bg-primary text-primary-foreground text-sm tracking-widest uppercase font-medium hover:bg-primary/90 transition-all duration-300 disabled:opacity-30 disabled:cursor-not-allowed glow-gold mt-4"
           >
-            {t('mandate.submit')}
+            {submitting ? t('mandate.submitting') : t('mandate.submit')}
           </button>
         </form>
       </div>

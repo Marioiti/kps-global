@@ -112,9 +112,31 @@ export const translations: Record<Language, Record<string, string>> = {
     'mandate.contactPersonPlaceholder': 'Full name',
     'mandate.contactChannel': 'WhatsApp / Telegram / Phone',
     'mandate.contactChannelPlaceholder': 'e.g. +7 914 557 4000',
-    'mandate.agree': 'I agree to follow the KPS non-negotiable algorithm.',
+    'mandate.agreePrefix': 'I agree to follow the ',
+    'mandate.agreeLink': 'KPS non-negotiable algorithm',
+    'mandate.agreeSuffix': '.',
+    'mandate.acceptTerms': 'I Agree',
+    'mandate.downloadPdf': 'Download PDF Version',
+    'algorithm.termsFull': `KPS GLOBAL SOLUTIONS: TERMS OF SERVICE & TRANSACTION ALGORITHM
+
+LEGAL NOTICE & BINDING AGREEMENT
+
+By clicking "I Agree" or proceeding to request services, you (the "Client") acknowledge and irrevocably agree to the following Non-Negotiable Algorithm and Fee Protection terms established by PT Kusuma Petak Sari (the "Consultant"):
+
+1. Strict Procedural Sequence: All transactions follow the KPS Algorithm: Technical Assignment (ICPO) → TCIA/Consulting Agreement Execution → Conditional Disclosure. No sensitive data, supplier identities, or draft SPAs shall be released prior to the execution of a formal mandate and/or payment of the initial consulting fee.
+
+2. Irrevocable Fee Protection: The Client guarantees the payment of the Success Fee (Commission) for every shipment, rollover, or extension of the contract facilitated by the Consultant.
+
+3. Non-Circumvention: The Client shall not, under any circumstances, contact, negotiate, or conclude transactions with any Introduced Party (Suppliers, Refineries, or Mandates) without the prior written consent of the Consultant. This protection remains in force for two (2) years globally.
+
+4. Liquidated Damages: Any breach of the non-circumvention or payment clauses shall trigger an immediate penalty of USD 100,000 plus 100% of the total projected commissions.
+
+5. Jurisdiction: These terms are governed by the laws of Hong Kong. Any disputes shall be resolved via ICC Arbitration in Hong Kong.`,
+    'algorithm.scrollHint': 'Scroll to the end to enable the Accept button.',
     'mandate.submit': 'Request a Strategic Briefing',
+    'mandate.submitting': 'Sending…',
     'mandate.success': 'Mandate submitted. We will review within 48 business hours.',
+    'mandate.error': 'Failed to send. Please try again or contact us directly.',
 
     // Footer
     'footer.tagline': 'Structuring the Essence of Global Trade',
@@ -233,9 +255,31 @@ export const translations: Record<Language, Record<string, string>> = {
     'mandate.contactPersonPlaceholder': 'ФИО',
     'mandate.contactChannel': 'WhatsApp / Telegram / Телефон',
     'mandate.contactChannelPlaceholder': 'напр. +7 914 557 4000',
-    'mandate.agree': 'Я согласен следовать безусловному алгоритму KPS.',
+    'mandate.agreePrefix': 'Я согласен следовать ',
+    'mandate.agreeLink': 'безусловному алгоритму KPS',
+    'mandate.agreeSuffix': '.',
+    'mandate.acceptTerms': 'Согласен',
+    'mandate.downloadPdf': 'Скачать PDF-версию',
+    'algorithm.termsFull': `KPS GLOBAL SOLUTIONS: УСЛОВИЯ ИСПОЛЬЗОВАНИЯ И ТРАНЗАКЦИОННЫЙ АЛГОРИТМ
+
+ЮРИДИЧЕСКОЕ УВЕДОМЛЕНИЕ И ОБЯЗАТЕЛЬНОЕ СОГЛАШЕНИЕ
+
+Нажимая «Согласен» или переходя к запросу услуг, вы («Клиент») подтверждаете и безотзывно соглашаетесь со следующим «Алгоритмом работы» и условиями «Защиты гонорара», установленными PT Kusuma Petak Sari («Консультант»):
+
+1. Строгая последовательность процедур: Все сделки следуют Алгоритму KPS: Техническое задание (ICPO) → Подписание TCIA/Консалтингового соглашения → Условное раскрытие информации. Никакие конфиденциальные данные, личности поставщиков или проекты SPA не подлежат раскрытию до подписания формального мандата и/или оплаты первичного консультационного сбора.
+
+2. Безотзывная защита гонорара: Клиент гарантирует выплату Гонорара за успех (Комиссии) за каждую отгрузку, пролонгацию или продление контракта, организованного при содействии Консультанта.
+
+3. Запрет на обход (Non-Circumvention): Клиент обязуется ни при каких обстоятельствах не вступать в контакт, не вести переговоры и не заключать сделки с любой Представленной стороной (Поставщиками, НПЗ или мандатами) без предварительного письменного согласия Консультанта. Данная защита действует в течение двух (2) лет по всему миру.
+
+4. Штрафные санкции: Любое нарушение пунктов об обходе или невыплате влечет за собой немедленный штраф в размере 100 000 долларов США плюс 100% от общей суммы прогнозируемой комиссии.
+
+5. Юрисдикция: Настоящие условия регулируются законодательством Гонконга. Любые споры подлежат разрешению через арбитраж ICC в Гонконге.`,
+    'algorithm.scrollHint': 'Прокрутите до конца, чтобы активировать кнопку «Согласен».',
     'mandate.submit': 'Запросить стратегический брифинг',
+    'mandate.submitting': 'Отправка…',
     'mandate.success': 'Мандат отправлен. Мы рассмотрим его в течение 48 рабочих часов.',
+    'mandate.error': 'Не удалось отправить. Попробуйте ещё раз или свяжитесь с нами напрямую.',
 
     'footer.tagline': 'Структурируя суть глобальной торговли',
     'footer.registered': 'PT Kusuma Petak Sari. Зарегистрирована в Индонезии.',
@@ -352,9 +396,31 @@ export const translations: Record<Language, Record<string, string>> = {
     'mandate.contactPersonPlaceholder': '全名',
     'mandate.contactChannel': 'WhatsApp / Telegram / 电话',
     'mandate.contactChannelPlaceholder': '例如 +7 914 557 4000',
-    'mandate.agree': '我同意遵循KPS不可谈判的算法。',
+    'mandate.agreePrefix': '我同意遵循',
+    'mandate.agreeLink': 'KPS不可谈判的算法',
+    'mandate.agreeSuffix': '。',
+    'mandate.acceptTerms': '同意',
+    'mandate.downloadPdf': '下载 PDF 版本',
+    'algorithm.termsFull': `KPS GLOBAL SOLUTIONS: 服务条款与交易算法
+
+法律声明与约束性协议
+
+通过点击"我同意"或继续请求服务，您（"客户"）确认并不可撤销地同意由 PT Kusuma Petak Sari（"顾问"）制定的以下"不可谈判算法"和"佣金保护"条款：
+
+1. 严格的程序顺序：所有交易均遵循 KPS 算法：技术任务 (ICPO) → 签署 TCIA/咨询协议 → 有条件披露。在签署正式授权书和/或支付首笔咨询费之前，不得泄露任何敏感数据、供应商身份或 SPA 草案。
+
+2. 不可撤销的费用保护：客户保证就顾问促成的合同项下的每批货物、展期或续约支付成功费（佣金）。
+
+3. 禁止绕过条款：未经顾问事先书面同意，客户在任何情况下均不得与任何引荐方（供应商、炼油厂或授权代表）接触、谈判或达成交易。此保护在全球范围内有效期为两（2）年。
+
+4. 违约金：任何违反禁止绕过或支付条款的行为将导致立即处以 100,000 美元 的罚款，外加预计总佣金的 100%。
+
+5. 管辖权：本条款受香港法律管辖。任何争议应通过香港国际商会 (ICC) 仲裁解决。`,
+    'algorithm.scrollHint': '滚动至底部以启用「同意」按钮。',
     'mandate.submit': '请求战略简报',
+    'mandate.submitting': '发送中…',
     'mandate.success': '委托已提交。我们将在48个工作小时内审核。',
+    'mandate.error': '发送失败。请重试或直接联系我们。',
 
     'footer.tagline': '构建全球贸易的本质',
     'footer.registered': 'PT Kusuma Petak Sari。注册于印度尼西亚。',
