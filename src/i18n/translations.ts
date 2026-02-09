@@ -18,7 +18,7 @@ export const translations: Record<Language, Record<string, string>> = {
     // Philosophy
     'philosophy.sectionLabel': 'The Triple Meaning',
     'philosophy.title': 'Philosophy of the Name',
-    'philosophy.subtitle': 'Every word in PT Kusuma Petak Sari carries a deliberate meaning that defines how we operate.',
+    'philosophy.subtitle': 'Every word in Kusuma Petak Sari carries a deliberate meaning that defines how we operate.',
 
     'philosophy.kusuma.title': 'Kusuma',
     'philosophy.kusuma.meaning': 'The Flower',
@@ -34,7 +34,7 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // Services
     'services.sectionLabel': 'Service Verticals',
-    'services.title': 'Commodity Desk',
+    'services.title': 'Strategic Sourcing & Transaction Architecture',
     'services.subtitle': 'Structured access to primary commodity markets through verified supply chains and institutional-grade procedures.',
 
     'services.energy.title': 'Energy & Fuel',
@@ -52,17 +52,17 @@ export const translations: Record<Language, Record<string, string>> = {
     'services.algorithm.title': 'The KPS Algorithm',
     'services.algorithm.step1': 'Screening: Entity verification, compliance check, and background assessment.',
     'services.algorithm.step2': 'Structure: LOI, ICPO, and financial readiness verification (POF/BCL/SBLC).',
-    'services.algorithm.step3': 'Compliance: KYC/AML procedures, sanctions screening, and jurisdiction analysis.',
+    'services.algorithm.step3': 'Compliance: KYC/AML procedures, sanctions screening, UBO verification Source of Funds analysis and jurisdiction check.',
     'services.algorithm.step4': 'Mandate: Contract terms, payment mechanisms, and logistics planning.',
-    'services.algorithm.step5': 'Execution: JVTA signing, inspection, title transfer, and payment settlement.',
+    'services.algorithm.step5': 'Execution: TCIA signing, inspection, title transfer, and payment settlement.',
 
     // Capabilities
     'capabilities.sectionLabel': 'Capabilities',
     'capabilities.title': 'Transaction Architecture',
     'capabilities.subtitle': 'Beyond brokerage—we architect the entire transaction lifecycle.',
 
-    'capabilities.paymaster.title': 'Transaction Management',
-    'capabilities.paymaster.desc': 'KPS acts as the secure Transaction Manager for the entire transaction chain. Escrow management, fund verification, and compliant disbursement.',
+    'capabilities.paymaster.title': 'Transaction Lifecycle Coordination',
+    'capabilities.paymaster.desc': 'KPS acts as the secure Transaction Manager for the entire transaction chain. Escrow management, fund verification, and Financial Workflow Compliance.',
 
     'capabilities.investment.title': 'Investment Models',
     'capabilities.investment.desc': 'Financial analysis and investment modeling for international trade. Structured deal frameworks with risk-adjusted returns.',
@@ -79,13 +79,13 @@ export const translations: Record<Language, Record<string, string>> = {
     'algorithm.step2.desc': 'LOI, ICPO, and financial readiness verification (POF/BCL/SBLC).',
 
     'algorithm.step3.title': 'Compliance Review',
-    'algorithm.step3.desc': 'KYC/AML procedures, sanctions screening, and jurisdiction analysis.',
+    'algorithm.step3.desc': 'KKYC/AML procedures, sanctions screening, UBO verification Source of Funds analysis and jurisdiction check.',
 
     'algorithm.step4.title': 'Deal Structuring',
     'algorithm.step4.desc': 'Contract terms, payment mechanisms, and logistics planning.',
 
-    'algorithm.step5.title': 'JVTA Signing',
-    'algorithm.step5.desc': 'Joint Venture Transaction Agreement execution between all parties.',
+    'algorithm.step5.title': 'TCIA Signing',
+    'algorithm.step5.desc': 'TCIA execution between all parties.',
 
     'algorithm.step6.title': 'Final Delivery',
     'algorithm.step6.desc': 'Execution, inspection, title transfer, and payment settlement.',
@@ -121,7 +121,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'mandate.contactPerson': 'Contact Person',
     'mandate.contactPersonPlaceholder': 'Full name',
     'mandate.contactChannel': 'WhatsApp / Telegram / Phone',
-    'mandate.contactChannelPlaceholder': 'e.g. +7 914 557 4000',
+    'mandate.contactChannelPlaceholder': 'e.g. +62 000 000 0000',
     'mandate.agreePrefix': 'I agree to follow the ',
     'mandate.agreeLink': 'KPS non-negotiable algorithm',
     'mandate.agreeSuffix': '.',
@@ -152,7 +152,7 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     // Footer
     'footer.companyName': 'KPS Global Solutions',
     'footer.tagline': 'Structuring the Essence of Global Trade',
-    'footer.registered': 'PT Kusuma Petak Sari. Registered in Indonesia.',
+    'footer.registered': 'KPS Global Solutions is a trade name of PT Kusuma Petak Sari, a management consulting firm registered in Indonesia. We do not provide regulated financial, banking, or money transfer services. We act strictly as a transaction coordinator and consultant.',
     'footer.rights': 'All rights reserved.',
     'footer.zeroNoise': 'Zero Noise',
     'footer.noToxic': 'No Toxic Chains',
@@ -160,7 +160,7 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
 
     // History
     'history.badge': 'Since 2017',
-    'history.text': 'From BRIK to ARION, our journey refined what matters. PT Kusuma Petak Sari is the distilled identity—pure structure, zero noise.',
+    'history.text': 'From BRIK to KPS, our journey refined what matters. Kusuma Petak Sari is the distilled identity—pure structure, zero noise.',
 
     // NotFound
     'notFound.title': 'Oops! Page not found',
@@ -181,7 +181,7 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
 
     'philosophy.sectionLabel': 'Тройной смысл',
     'philosophy.title': 'Философия имени',
-    'philosophy.subtitle': 'Каждое слово в PT Kusuma Petak Sari несёт осознанный смысл, определяющий наш подход.',
+    'philosophy.subtitle': 'Каждое слово в Kusuma Petak Sari несёт осознанный смысл, определяющий наш подход.',
 
     'philosophy.kusuma.title': 'Kusuma',
     'philosophy.kusuma.meaning': 'Цветок',
@@ -196,7 +196,7 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'philosophy.sari.desc': 'Фокус только на главном результате — успешной поставке. Мы убираем отвлечения и концентрируемся на сути.',
 
     'services.sectionLabel': 'Направления',
-    'services.title': 'Товарный деск',
+    'services.title': 'Стратегический поиск и архитектура транзакций',
     'services.subtitle': 'Структурированный доступ к первичным товарным рынкам через верифицированные цепочки поставок.',
 
     'services.energy.title': 'Энергоносители',
@@ -214,16 +214,16 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'services.algorithm.title': 'Алгоритм KPS',
     'services.algorithm.step1': 'Скрининг: Верификация компании, проверка комплаенса и оценка репутации.',
     'services.algorithm.step2': 'Структура: LOI, ICPO и верификация финансовой готовности (POF/BCL/SBLC).',
-    'services.algorithm.step3': 'Комплаенс: Процедуры KYC/AML, скрининг санкций и юрисдикционный анализ.',
+    'services.algorithm.step3': 'Комплаенс: Процедуры KKYC/AML, проверка санкций, проверка UBO, анализ источников средств и проверка юрисдикции.',
     'services.algorithm.step4': 'Мандат: Условия контракта, платёжные механизмы и логистическое планирование.',
-    'services.algorithm.step5': 'Исполнение: Подписание JVTA, инспекция, передача титула и расчёт.',
+    'services.algorithm.step5': 'Исполнение: Подписание TCIA, инспекция, передача титула и расчёт.',
 
     'capabilities.sectionLabel': 'Возможности',
     'capabilities.title': 'Архитектура сделок',
     'capabilities.subtitle': 'Больше чем брокеридж — мы проектируем весь жизненный цикл транзакции.',
 
-    'capabilities.paymaster.title': 'Управление транзакциями',
-    'capabilities.paymaster.desc': 'KPS выступает как защищённая система переводов всей транзакционной цепочки. Эскроу, верификация средств и комплаентное распределение.',
+    'capabilities.paymaster.title': 'Координация жизненного цикла транзакции',
+    'capabilities.paymaster.desc': 'KPS, как менеджер безопасных транзакций для всей цепочки транзакций, отвечает за управление хранением, проверку фондов и соблюдение финансовых рабочих процессов.',
 
     'capabilities.investment.title': 'Инвестиционные модели',
     'capabilities.investment.desc': 'Финансовый анализ и инвестиционное моделирование для международной торговли. Структурированные сделки с оптимизированным риском.',
@@ -239,13 +239,13 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'algorithm.step2.desc': 'LOI, ICPO и верификация финансовой готовности (POF/BCL/SBLC).',
 
     'algorithm.step3.title': 'Комплаенс-ревью',
-    'algorithm.step3.desc': 'Процедуры KYC/AML, скрининг санкций и юрисдикционный анализ.',
+    'algorithm.step3.desc': 'Процедуры KKYC/AML, проверка санкций, проверка UBO, анализ источников средств и проверка юрисдикции.',
 
     'algorithm.step4.title': 'Структурирование сделки',
     'algorithm.step4.desc': 'Условия контракта, платёжные механизмы и логистическое планирование.',
 
-    'algorithm.step5.title': 'Подписание JVTA',
-    'algorithm.step5.desc': 'Исполнение совместного транзакционного соглашения между всеми сторонами.',
+    'algorithm.step5.title': 'Подписание TCIA',
+    'algorithm.step5.desc': 'Исполнение  cоглашения TCIA между всеми сторонами.',
 
     'algorithm.step6.title': 'Финальная поставка',
     'algorithm.step6.desc': 'Исполнение, инспекция, передача титула и расчёт.',
@@ -280,7 +280,7 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'mandate.contactPerson': 'Контактное лицо',
     'mandate.contactPersonPlaceholder': 'ФИО',
     'mandate.contactChannel': 'WhatsApp / Telegram / Телефон',
-    'mandate.contactChannelPlaceholder': 'напр. +7 914 557 4000',
+    'mandate.contactChannelPlaceholder': 'напр. +62 000 000 0000',
     'mandate.agreePrefix': 'Я согласен следовать ',
     'mandate.agreeLink': 'безусловному алгоритму KPS',
     'mandate.agreeSuffix': '.',
@@ -310,14 +310,14 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
 
     'footer.companyName': 'KPS Global Solutions',
     'footer.tagline': 'Структурируя суть глобальной торговли',
-    'footer.registered': 'PT Kusuma Petak Sari. Зарегистрирована в Индонезии.',
+    'footer.registered': 'KPS Global Solutions — это торговое название PT Kusuma Petak Sari, консалтинговой компании, зарегистрированной в Индонезии. Мы не предоставляем регулируемые финансовые, банковские или денежные переводы. Мы действуем исключительно в качестве координатора транзакций и консультанта.',
     'footer.rights': 'Все права защищены.',
     'footer.zeroNoise': 'Нулевой шум',
     'footer.noToxic': 'Без токсичных цепочек',
     'footer.reputation': 'Репутация важнее скорости',
 
     'history.badge': 'С 2017 года',
-    'history.text': 'От BRIK до ARION — наш путь отточил главное. PT Kusuma Petak Sari — это дистиллированная идентичность: чистая структура, нулевой шум.',
+    'history.text': 'От BRIK до KPS — наш путь отточил главное. Kusuma Petak Sari — это дистиллированная идентичность: чистая структура, нулевой шум.',
 
     'notFound.title': 'Страница не найдена',
     'notFound.backHome': 'Вернуться на главную',
@@ -337,7 +337,7 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
 
     'philosophy.sectionLabel': '三重含义',
     'philosophy.title': '名称哲学',
-    'philosophy.subtitle': 'PT Kusuma Petak Sari 的每个词都承载着明确的含义，定义了我们的运营方式。',
+    'philosophy.subtitle': 'Kusuma Petak Sari 的每个词都承载着明确的含义，定义了我们的运营方式。',
 
     'philosophy.kusuma.title': 'Kusuma',
     'philosophy.kusuma.meaning': '花',
@@ -352,7 +352,7 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'philosophy.sari.desc': '只关注核心结果——成功交付。我们剥离干扰，专注于真正重要的事物。',
 
     'services.sectionLabel': '服务方向',
-    'services.title': '商品交易台',
+    'services.title': '战略采购与交易架构',
     'services.subtitle': '通过验证的供应链和机构级流程，提供对主要大宗商品市场的结构化准入。',
 
     'services.energy.title': '能源与燃料',
@@ -370,16 +370,16 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'services.algorithm.title': 'KPS算法',
     'services.algorithm.step1': '筛选：实体验证、合规检查和背景评估。',
     'services.algorithm.step2': '结构：LOI、ICPO和财务准备验证（POF/BCL/SBLC）。',
-    'services.algorithm.step3': '合规：KYC/AML程序、制裁筛查和管辖权分析。',
+    'services.algorithm.step3': '合规：反洗钱/反恐怖融资程序、制裁筛查、最终受益人身份验证、资金来源分析及管辖权核查。',
     'services.algorithm.step4': '授权：合同条款、支付机制和物流规划。',
-    'services.algorithm.step5': '执行：签署JVTA、检验、产权转让和付款结算。',
+    'services.algorithm.step5': '执行：签署TCIA、检验、产权转让和付款结算。',
 
     'capabilities.sectionLabel': '能力',
     'capabilities.title': '交易架构',
     'capabilities.subtitle': '超越经纪——我们架构整个交易生命周期。',
 
-    'capabilities.paymaster.title': '交易管理',
-    'capabilities.paymaster.desc': 'KPS作为整个交易链的安全交易管理方，负责托管管理、资金验证及合规性支付。',
+    'capabilities.paymaster.title': '交易生命周期协调',
+    'capabilities.paymaster.desc': '作为整个交易链的安全交易管理器，KPS负责存储管理、资金核查以及金融工作流程的合规性。',
 
     'capabilities.investment.title': '投资模型',
     'capabilities.investment.desc': '国际贸易的财务分析和投资建模。具有风险调整收益的结构化交易框架。',
@@ -395,13 +395,13 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'algorithm.step2.desc': 'LOI、ICPO和财务准备验证（POF/BCL/SBLC）。',
 
     'algorithm.step3.title': '合规审查',
-    'algorithm.step3.desc': 'KYC/AML程序、制裁筛查和管辖权分析。',
+    'algorithm.step3.desc': '反洗钱/反恐怖融资程序、制裁筛查、最终受益人身份验证、资金来源分析及管辖权核查。',
 
     'algorithm.step4.title': '交易结构',
     'algorithm.step4.desc': '合同条款、支付机制和物流规划。',
 
-    'algorithm.step5.title': '签署JVTA',
-    'algorithm.step5.desc': '各方之间执行联合交易协议。',
+    'algorithm.step5.title': '签署TCIA',
+    'algorithm.step5.desc': '所有各方执行TCIA协议。',
 
     'algorithm.step6.title': '最终交付',
     'algorithm.step6.desc': '执行、检验、产权转移和付款结算。',
@@ -436,7 +436,7 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'mandate.contactPerson': '联系人',
     'mandate.contactPersonPlaceholder': '全名',
     'mandate.contactChannel': 'WhatsApp / Telegram / 电话',
-    'mandate.contactChannelPlaceholder': '例如 +7 914 557 4000',
+    'mandate.contactChannelPlaceholder': '例如 +62 000 000 0000',
     'mandate.agreePrefix': '我同意遵循',
     'mandate.agreeLink': 'KPS不可谈判的算法',
     'mandate.agreeSuffix': '。',
@@ -466,14 +466,14 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
 
     'footer.companyName': 'KPS Global Solutions',
     'footer.tagline': '构建全球贸易的本质',
-    'footer.registered': 'PT Kusuma Petak Sari。注册于印度尼西亚。',
+    'footer.registered': 'KPS Global Solutions 是 PT Kusuma Petak Sari 的商业名称，该公司是一家在印度尼西亚注册的咨询公司。我们不提供受监管的金融、银行或汇款服务。我们仅作为交易协调方和顾问开展业务。',
     'footer.rights': '版权所有。',
     'footer.zeroNoise': '零噪音',
     'footer.noToxic': '无毒链',
     'footer.reputation': '声誉重于速度',
 
     'history.badge': '始于2017年',
-    'history.text': '从BRIK到ARION，我们的旅程提炼了核心。PT Kusuma Petak Sari是蒸馏的身份——纯粹结构、零噪音。',
+    'history.text': '从BRIK到KPS，我们的旅程提炼了核心。Kusuma Petak Sari是蒸馏的身份——纯粹结构、零噪音。',
 
     'notFound.title': '页面未找到',
     'notFound.backHome': '返回首页',
