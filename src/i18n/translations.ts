@@ -47,7 +47,7 @@ export const translations: Record<Language, Record<string, string>> = {
 
     'services.metals.title': 'Strategic Metals',
     'services.metals.desc': 'Aluminum (A7) and Sulphur contractual supply. Standardized delivery protocols with full compliance documentation.',
-    'services.metals.details': 'Aluminum A7 and Sulphur contractual supply. Paymaster security for the entire transaction chain. Standardized delivery protocols with full compliance documentation. Escrow and title transfer under institutional-grade procedures.',
+    'services.metals.details': 'Aluminum A7 and Sulphur contractual supply. Payment security for the entire transaction chain. Standardized delivery protocols with full compliance documentation. Escrow and title transfer under institutional-grade procedures.',
 
     'services.algorithm.title': 'The KPS Algorithm',
     'services.algorithm.step1': 'Screening: Entity verification, compliance check, and background assessment.',
@@ -61,8 +61,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'capabilities.title': 'Transaction Architecture',
     'capabilities.subtitle': 'Beyond brokerage—we architect the entire transaction lifecycle.',
 
-    'capabilities.paymaster.title': 'Paymaster Services',
-    'capabilities.paymaster.desc': 'KPS acts as the secure Paymaster for the entire transaction chain. Escrow management, fund verification, and compliant disbursement.',
+    'capabilities.paymaster.title': 'Transaction Management',
+    'capabilities.paymaster.desc': 'KPS acts as the secure Transaction Manager for the entire transaction chain. Escrow management, fund verification, and compliant disbursement.',
 
     'capabilities.investment.title': 'Investment Models',
     'capabilities.investment.desc': 'Financial analysis and investment modeling for international trade. Structured deal frameworks with risk-adjusted returns.',
@@ -222,8 +222,8 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'capabilities.title': 'Архитектура сделок',
     'capabilities.subtitle': 'Больше чем брокеридж — мы проектируем весь жизненный цикл транзакции.',
 
-    'capabilities.paymaster.title': 'Услуги пеймастера',
-    'capabilities.paymaster.desc': 'KPS выступает защищённым пеймастером всей транзакционной цепочки. Эскроу, верификация средств и комплаентное распределение.',
+    'capabilities.paymaster.title': 'Управление транзакциями',
+    'capabilities.paymaster.desc': 'KPS выступает как защищённая система переводов всей транзакционной цепочки. Эскроу, верификация средств и комплаентное распределение.',
 
     'capabilities.investment.title': 'Инвестиционные модели',
     'capabilities.investment.desc': 'Финансовый анализ и инвестиционное моделирование для международной торговли. Структурированные сделки с оптимизированным риском.',
@@ -378,8 +378,8 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'capabilities.title': '交易架构',
     'capabilities.subtitle': '超越经纪——我们架构整个交易生命周期。',
 
-    'capabilities.paymaster.title': '付款代理服务',
-    'capabilities.paymaster.desc': 'KPS作为整个交易链的安全付款代理。托管管理、资金验证和合规拨付。',
+    'capabilities.paymaster.title': '交易管理',
+    'capabilities.paymaster.desc': 'KPS作为整个交易链的安全交易管理方，负责托管管理、资金验证及合规性支付。',
 
     'capabilities.investment.title': '投资模型',
     'capabilities.investment.desc': '国际贸易的财务分析和投资建模。具有风险调整收益的结构化交易框架。',
