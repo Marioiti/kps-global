@@ -174,7 +174,7 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'privacy.title': 'Privacy Policy',
     'privacy.backHome': 'Back to Home',
     'privacy.lastUpdatedLabel': 'Last updated',
-    'privacy.lastUpdatedDate': '__________',
+    'privacy.lastUpdatedDate': '18 July 2026',
     'privacy.intro': `KPS Global Solutions is a trade name of **PT Kusuma Petak Sari** ("KPS", "we", "us"), a management consulting firm registered in the Republic of Indonesia. This Policy explains how we handle personal data collected through this website (kpsglobal.id), in line with **Law of the Republic of Indonesia No. 27 of 2022 on Personal Data Protection (UU PDP)** and internationally recognised data protection principles.\n\nThis Policy covers only the personal data we collect through this website. Data processed under separate business or agency agreements is governed by those agreements and their own data-protection terms.`,
 
     'privacy.s1.title': '1. Data We Collect',
@@ -202,7 +202,7 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'privacy.s8.body': `We apply technical and organisational measures appropriate to the risk, including encryption in transit (TLS), access on a need-to-know basis, and a prohibition on storing personal data permanently in email or messengers. No method of transmission over the internet is completely secure, but we work to protect your data at all times.`,
 
     'privacy.s9.title': '9. Contact Us',
-    'privacy.s9.body': `For any privacy question or to exercise your rights, contact:\n\n**PT Kusuma Petak Sari (KPS Global Solutions)**\nAddress: __________\nE-mail: mnc@kpsglobal.id`,
+    'privacy.s9.body': `For any privacy question or to exercise your rights, contact:\n\n**PT Kusuma Petak Sari (KPS Global Solutions)**\nAddress: Denpasar, Bali, Indonesia\nE-mail: mnc@kpsglobal.id`,
 
     'privacy.s10.title': '10. Changes to This Policy',
     'privacy.s10.body': `We review this Policy at least annually and whenever our processing operations or applicable law change. The current version is always available on this page, with the "Last updated" date shown above.`,
@@ -371,7 +371,7 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'privacy.title': 'Политика конфиденциальности',
     'privacy.backHome': 'На главную',
     'privacy.lastUpdatedLabel': 'Последнее обновление',
-    'privacy.lastUpdatedDate': '__________',
+    'privacy.lastUpdatedDate': '18 июля 2026 г.',
     'privacy.intro': `KPS Global Solutions — торговое название **PT Kusuma Petak Sari** («KPS», «мы»), консалтинговой компании, зарегистрированной в Республике Индонезия. Настоящая Политика описывает, как мы обрабатываем персональные данные, собираемые через этот сайт (kpsglobal.id), в соответствии с **Законом Республики Индонезия № 27 от 2022 года о защите персональных данных (UU PDP)** и общепризнанными принципами защиты данных.\n\nПолитика распространяется только на персональные данные, собираемые через этот сайт. Данные, обрабатываемые в рамках отдельных деловых или агентских договоров, регулируются этими договорами и их собственными условиями о защите данных.`,
 
     'privacy.s1.title': '1. Какие данные мы собираем',
@@ -399,7 +399,7 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'privacy.s8.body': `Мы применяем технические и организационные меры, соразмерные рискам: шифрование при передаче (TLS), доступ по принципу необходимости и запрет на постоянное хранение персональных данных в email или мессенджерах. Ни один способ передачи через интернет не является полностью безопасным, но мы стремимся защищать ваши данные во всех случаях.`,
 
     'privacy.s9.title': '9. Контакты',
-    'privacy.s9.body': `По любым вопросам о конфиденциальности или для реализации ваших прав обращайтесь:\n\n**PT Kusuma Petak Sari (KPS Global Solutions)**\nАдрес: __________\nE-mail: mnc@kpsglobal.id`,
+    'privacy.s9.body': `По любым вопросам о конфиденциальности или для реализации ваших прав обращайтесь:\n\n**PT Kusuma Petak Sari (KPS Global Solutions)**\nАдрес: Denpasar, Bali, Indonesia\nE-mail: mnc@kpsglobal.id`,
 
     'privacy.s10.title': '10. Изменения Политики',
     'privacy.s10.body': `Мы пересматриваем настоящую Политику не реже одного раза в год и при изменении наших операций обработки или применимого законодательства. Актуальная версия всегда доступна на этой странице; дата «Последнее обновление» указана выше.`,
@@ -568,7 +568,7 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'privacy.title': '隐私政策',
     'privacy.backHome': '返回首页',
     'privacy.lastUpdatedLabel': '最后更新',
-    'privacy.lastUpdatedDate': '__________',
+    'privacy.lastUpdatedDate': '2026年7月18日',
     'privacy.intro': `KPS Global Solutions 是 **PT Kusuma Petak Sari**（"KPS"、"我们"）的商业名称，该公司是一家在印度尼西亚共和国注册的咨询公司。本政策说明我们如何处理通过本网站（kpsglobal.id）收集的个人数据，依据 **印度尼西亚共和国 2022 年第 27 号个人数据保护法（UU PDP）** 及国际公认的数据保护原则。\n\n本政策仅涵盖我们通过本网站收集的个人数据。在单独的业务或代理协议下处理的数据，受这些协议及其各自的数据保护条款约束。`,
 
     'privacy.s1.title': '1. 我们收集的数据',
@@ -596,7 +596,7 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'privacy.s8.body': `我们采取与风险相称的技术和组织措施，包括传输加密（TLS）、按需知密的访问原则，以及禁止将个人数据长期存储在电子邮件或即时通讯工具中。互联网上没有任何传输方式是完全安全的，但我们始终致力于保护您的数据。`,
 
     'privacy.s9.title': '9. 联系我们',
-    'privacy.s9.body': `如有任何隐私问题或需行使您的权利，请联系：\n\n**PT Kusuma Petak Sari (KPS Global Solutions)**\n地址：__________\n电子邮件：mnc@kpsglobal.id`,
+    'privacy.s9.body': `如有任何隐私问题或需行使您的权利，请联系：\n\n**PT Kusuma Petak Sari (KPS Global Solutions)**\n地址：Denpasar, Bali, Indonesia\n电子邮件：mnc@kpsglobal.id`,
 
     'privacy.s10.title': '10. 本政策的变更',
     'privacy.s10.body': `我们至少每年审查一次本政策，并在我们的处理操作或适用法律发生变化时进行审查。最新版本始终可在本页面查看，上方显示"最后更新"日期。`,
