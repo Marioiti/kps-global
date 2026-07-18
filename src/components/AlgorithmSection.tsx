@@ -1,6 +1,5 @@
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import DaisyMotif from './DaisyMotif';
 import Reveal from '@/hooks/use-reveal';
 
 const AlgorithmSection: React.FC = () => {
@@ -20,14 +19,14 @@ const AlgorithmSection: React.FC = () => {
       <div className="absolute top-0 left-0 right-0 line-gold" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center gap-4 mb-6">
-          <DaisyMotif size={16} className="text-primary" />
+        <div className="flex items-center gap-3 mb-5">
+          <span className="w-6 h-px bg-accent" aria-hidden="true" />
           <span className="text-xs tracking-[0.3em] uppercase text-primary font-medium">
             {t('approach.sectionLabel')}
           </span>
         </div>
 
-        <h2 className="font-serif text-3xl md:text-5xl text-foreground mb-4">
+        <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
           {t('approach.title')}
         </h2>
         <p className="text-muted-foreground text-lg max-w-2xl mb-20">

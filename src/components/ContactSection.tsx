@@ -87,8 +87,8 @@ const ContactSection: React.FC = () => {
       <div className="absolute top-0 left-0 right-0 line-gold" />
 
       <div className="max-w-2xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center gap-4 mb-6">
-          <DaisyMotif size={16} className="text-primary" />
+        <div className="flex items-center gap-3 mb-5">
+          <span className="w-6 h-px bg-accent" aria-hidden="true" />
           <span className="text-xs tracking-[0.3em] uppercase text-primary font-medium">
             {t('contact.sectionLabel')}
           </span>
