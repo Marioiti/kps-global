@@ -15,6 +15,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'hero.subtitle':
       'KPS Global helps founders and investors structure, staff and execute complex international deals and operations — as an independent consultant, never as a broker in the chain.',
     'hero.cta': 'Start a conversation',
+    'hero.secondaryCta': 'See how we work',
+    'hero.reachLabel': 'Active markets',
     'hero.trust':
       'Fractional COO leadership, transaction structuring and compliance across Singapore, China, Hong Kong, Malaysia, the US, the UAE, India and Indonesia.',
 
@@ -227,6 +229,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'hero.subtitle':
       'KPS Global помогает основателям и инвесторам структурировать, укомплектовывать и доводить до конца сложные международные сделки и операции — как независимый консультант, а не звено цепочки.',
     'hero.cta': 'Начать разговор',
+    'hero.secondaryCta': 'Как мы работаем',
+    'hero.reachLabel': 'Рынки присутствия',
     'hero.trust':
       'Fractional COO, структурирование сделок и комплаенс в Сингапуре, Китае, Гонконге, Малайзии, США, ОАЭ, Индии и Индонезии.',
 
@@ -439,6 +443,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'hero.subtitle':
       'KPS Global 帮助创始人与投资者构建、组建并执行复杂的国际交易与运营——以独立顾问的身份，而非交易链条中的一环。',
     'hero.cta': '开始沟通',
+    'hero.secondaryCta': '了解合作方式',
+    'hero.reachLabel': '活跃市场',
     'hero.trust':
       '在新加坡、中国、香港、马来西亚、美国、阿联酋、印度与印度尼西亚提供 Fractional COO、交易结构与合规。',
 

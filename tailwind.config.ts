@@ -16,7 +16,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-        serif: ['Playfair Display', 'Georgia', 'serif'],
+        display: ['Manrope', 'Inter', 'system-ui', 'sans-serif'],
+        serif: ['Manrope', 'Inter', 'system-ui', 'sans-serif'],
         chinese: ['Noto Sans SC', 'Inter', 'sans-serif'],
       },
       colors: {

@@ -1,83 +1,80 @@
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import kpsLogo from '@/assets/kps-logo.png';
-import { ArrowDown, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const HeroSection: React.FC = () => {
   const { t } = useLanguage();
 
+  const markets = ['Singapore', 'China', 'Hong Kong', 'Malaysia', 'USA', 'UAE', 'India', 'Indonesia'];
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Ambient gradient wash */}
+    <section className="relative min-h-[92vh] flex items-center overflow-hidden border-b border-border">
+      {/* Ambient wash */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            'radial-gradient(120% 80% at 50% 0%, hsl(222 47% 96%) 0%, hsl(var(--background)) 55%)',
+            'radial-gradient(110% 90% at 15% 0%, hsl(222 47% 95%) 0%, hsl(var(--background)) 55%)',
         }}
       />
 
-      {/* Background motif */}
-      <div className="absolute inset-0 flex items-center justify-center opacity-[0.04]">
-        <img
-          src={kpsLogo}
-          alt=""
-          aria-hidden="true"
-          className="w-[800px] h-[800px] max-w-[130vw] object-contain animate-petal-rotate motion-reduce:animate-none"
-        />
-      </div>
-
-      {/* Subtle grid */}
+      {/* Fine grid */}
       <div
-        className="absolute inset-0 opacity-[0.02]"
+        className="absolute inset-0 opacity-[0.025]"
         style={{
           backgroundImage: `linear-gradient(hsl(var(--border)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px)`,
-          backgroundSize: '80px 80px',
+          backgroundSize: '64px 64px',
         }}
       />
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          <div className="w-8 h-px bg-primary/50" />
-          <span className="text-xs tracking-[0.3em] uppercase text-primary font-medium">
-            {t('hero.badge')}
-          </span>
-          <div className="w-8 h-px bg-primary/50" />
-        </div>
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 pt-28 pb-16">
+        <div className="max-w-4xl">
+          {/* Eyebrow */}
+          <div className="inline-flex items-center gap-3 mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.15s' }}>
+            <span className="w-6 h-px bg-accent" />
+            <span className="text-xs tracking-[0.25em] uppercase text-primary/70 font-semibold">
+              {t('hero.badge')}
+            </span>
+          </div>
 
-        {/* Title */}
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl leading-[1.1] tracking-tight mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.5s' }}>
-          <span className="text-gradient-gold">{t('hero.title')}</span>
-        </h1>
+          {/* Title */}
+          <h1 className="text-4xl md:text-6xl lg:text-[4.4rem] font-extrabold leading-[1.04] tracking-tight text-foreground mb-7 max-w-3xl text-balance opacity-0 animate-fade-in" style={{ animationDelay: '0.35s' }}>
+            {t('hero.title')}
+          </h1>
 
-        {/* Subtitle */}
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed opacity-0 animate-fade-in" style={{ animationDelay: '0.8s' }}>
-          {t('hero.subtitle')}
-        </p>
-
-        {/* CTA */}
-        <div className="opacity-0 animate-fade-in" style={{ animationDelay: '1.1s' }}>
-          <a
-            href="#contact"
-            className="group inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground text-sm tracking-widest uppercase font-medium hover:bg-primary/90 hover:gap-4 transition-all duration-300 glow-gold rounded-sm"
-          >
-            {t('hero.cta')}
-            <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
-          </a>
-        </div>
-
-        {/* History line */}
-        <div className="mt-20 opacity-0 animate-fade-in" style={{ animationDelay: '1.4s' }}>
-          <p className="text-xs text-muted-foreground/60 max-w-xl mx-auto leading-relaxed">
-            {t('hero.trust')}
+          {/* Subtitle */}
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed opacity-0 animate-fade-in" style={{ animationDelay: '0.55s' }}>
+            {t('hero.subtitle')}
           </p>
-        </div>
-      </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0 animate-fade-in" style={{ animationDelay: '2s' }}>
-        <ArrowDown size={16} className="text-muted-foreground animate-bounce" />
+          {/* CTA */}
+          <div className="flex flex-wrap items-center gap-5 opacity-0 animate-fade-in" style={{ animationDelay: '0.75s' }}>
+            <a
+              href="#contact"
+              className="group inline-flex items-center gap-3 px-7 py-3.5 bg-primary text-primary-foreground text-sm tracking-wide font-semibold hover:bg-primary/90 hover:gap-4 transition-all duration-300 rounded-sm"
+            >
+              {t('hero.cta')}
+              <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
+            </a>
+            <a href="#services" className="text-sm font-medium text-primary/80 hover:text-primary underline-offset-4 hover:underline transition-colors">
+              {t('hero.secondaryCta')}
+            </a>
+          </div>
+        </div>
+
+        {/* Reach bar */}
+        <div className="mt-20 pt-8 border-t border-border/70 opacity-0 animate-fade-in" style={{ animationDelay: '1s' }}>
+          <span className="text-[10px] tracking-[0.28em] uppercase text-muted-foreground/70 font-semibold">
+            {t('hero.reachLabel')}
+          </span>
+          <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
+            {markets.map((m) => (
+              <span key={m} className="text-sm text-foreground/70 font-medium">
+                {m}
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

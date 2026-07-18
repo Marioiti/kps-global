@@ -32,7 +32,7 @@
     --input: 220 13% 87%;
     --ring: 222 47% 18%;
 
-    --radius: 0.25rem;
+    --radius: 0.125rem;
 
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 222 47% 18%;
@@ -68,13 +68,16 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Manrope', 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.021em;
   }
 
   /* Chinese text support */
   [lang="zh"] h1, [lang="zh"] h2, [lang="zh"] h3, [lang="zh"] h4, [lang="zh"] h5, [lang="zh"] h6 {
-    font-family: 'Noto Sans SC', 'Playfair Display', serif;
-    font-weight: 600;
+    font-family: 'Noto Sans SC', 'Manrope', sans-serif;
+    font-weight: 700;
+    letter-spacing: normal;
   }
 
   [lang="zh"] {
