@@ -23,11 +23,11 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { key: 'nav.philosophy', href: '#philosophy' },
+    { key: 'nav.about', href: '#about' },
     { key: 'nav.services', href: '#services' },
-    { key: 'nav.capabilities', href: '#capabilities' },
-    { key: 'nav.algorithm', href: '#algorithm' },
-    { key: 'nav.mandate', href: '#mandate' },
+    { key: 'nav.approach', href: '#approach' },
+    { key: 'nav.sectors', href: '#sectors' },
+    { key: 'nav.contact', href: '#contact' },
   ];
 
   const handleNavClick = (href: string) => {

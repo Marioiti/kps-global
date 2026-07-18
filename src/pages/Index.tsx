@@ -1,11 +1,12 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
-import PhilosophySection from '@/components/PhilosophySection';
+import AboutSection from '@/components/PhilosophySection';
 import ServicesSection from '@/components/ServicesSection';
-import CapabilitiesSection from '@/components/CapabilitiesSection';
-import AlgorithmSection from '@/components/AlgorithmSection';
-import MandateForm from '@/components/MandateForm';
+import ApproachSection from '@/components/AlgorithmSection';
+import SectorsSection from '@/components/CapabilitiesSection';
+import GovernanceSection from '@/components/GovernanceSection';
+import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 
 const Index: React.FC = () => {
@@ -14,11 +15,12 @@ const Index: React.FC = () => {
       <Navbar />
       <main>
         <HeroSection />
-        <PhilosophySection />
+        <AboutSection />
         <ServicesSection />
-        <CapabilitiesSection />
-        <AlgorithmSection />
-        <MandateForm />
+        <ApproachSection />
+        <SectorsSection />
+        <GovernanceSection />
+        <ContactSection />
       </main>
       <Footer />
     </div>

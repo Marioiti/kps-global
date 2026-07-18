@@ -3,74 +3,70 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import DaisyMotif from './DaisyMotif';
 import Reveal from '@/hooks/use-reveal';
 
-const PhilosophySection: React.FC = () => {
+const AboutSection: React.FC = () => {
   const { t } = useLanguage();
 
-  const pillars = [
-    {
-      titleKey: 'philosophy.kusuma.title',
-      meaningKey: 'philosophy.kusuma.meaning',
-      descKey: 'philosophy.kusuma.desc',
-      icon: '❀',
-    },
-    {
-      titleKey: 'philosophy.petak.title',
-      meaningKey: 'philosophy.petak.meaning',
-      descKey: 'philosophy.petak.desc',
-      icon: '▦',
-    },
-    {
-      titleKey: 'philosophy.sari.title',
-      meaningKey: 'philosophy.sari.meaning',
-      descKey: 'philosophy.sari.desc',
-      icon: '◈',
-    },
+  const principles = [
+    { titleKey: 'about.p1.title', descKey: 'about.p1.desc' },
+    { titleKey: 'about.p2.title', descKey: 'about.p2.desc' },
+    { titleKey: 'about.p3.title', descKey: 'about.p3.desc' },
   ];
 
   return (
-    <section id="philosophy" className="py-32 relative">
+    <section id="about" className="py-32 relative">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section label */}
         <div className="flex items-center gap-4 mb-6">
           <DaisyMotif size={16} className="text-primary" />
           <span className="text-xs tracking-[0.3em] uppercase text-primary font-medium">
-            {t('philosophy.sectionLabel')}
+            {t('about.sectionLabel')}
           </span>
         </div>
 
         <h2 className="font-serif text-3xl md:text-5xl text-foreground mb-4">
-          {t('philosophy.title')}
+          {t('about.title')}
         </h2>
-        <p className="text-muted-foreground text-lg max-w-2xl mb-20">
-          {t('philosophy.subtitle')}
-        </p>
 
-        {/* Three pillars */}
+        {/* Lead */}
+        <div className="mb-20 max-w-3xl">
+          <p className="text-muted-foreground text-lg leading-relaxed">
+            {t('about.lead')}
+          </p>
+        </div>
+
+        {/* Three principles */}
         <div className="grid md:grid-cols-3 gap-px bg-border/30 overflow-hidden rounded-sm">
-          {pillars.map((pillar, i) => (
+          {principles.map((p, i) => (
             <Reveal
-              key={pillar.titleKey}
+              key={p.titleKey}
               delay={i * 120}
               className="bg-background p-8 md:p-12 group hover:bg-secondary/30 transition-colors duration-500"
             >
-              <span className="text-2xl mb-6 block opacity-40 group-hover:opacity-100 transition-opacity duration-500">
-                {pillar.icon}
+              <span className="text-xs tracking-[0.2em] uppercase text-primary mb-4 block">
+                {String(i + 1).padStart(2, '0')}
               </span>
-              <h3 className="font-serif text-2xl text-foreground mb-1">
-                {t(pillar.titleKey)}
+              <h3 className="font-serif text-2xl text-foreground mb-3">
+                {t(p.titleKey)}
               </h3>
-              <span className="text-xs tracking-[0.2em] uppercase text-primary mb-6 block">
-                {t(pillar.meaningKey)}
-              </span>
               <p className="text-muted-foreground leading-relaxed text-sm">
-                {t(pillar.descKey)}
+                {t(p.descKey)}
               </p>
             </Reveal>
           ))}
         </div>
+
+        {/* What we are not */}
+        <Reveal className="mt-8 border border-primary/20 bg-primary/[0.03] rounded-sm p-8 md:p-10">
+          <span className="text-xs tracking-[0.2em] uppercase text-primary block mb-3">
+            {t('about.notLabel')}
+          </span>
+          <p className="text-foreground/80 leading-relaxed max-w-3xl">
+            {t('about.notDesc')}
+          </p>
+        </Reveal>
       </div>
     </section>
   );
 };
 
-export default PhilosophySection;
+export default AboutSection;

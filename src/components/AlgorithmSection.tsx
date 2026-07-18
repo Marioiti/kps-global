@@ -7,31 +7,31 @@ const AlgorithmSection: React.FC = () => {
   const { t } = useLanguage();
 
   const steps = [
-    { num: '01', titleKey: 'algorithm.step1.title', descKey: 'algorithm.step1.desc' },
-    { num: '02', titleKey: 'algorithm.step2.title', descKey: 'algorithm.step2.desc' },
-    { num: '03', titleKey: 'algorithm.step3.title', descKey: 'algorithm.step3.desc' },
-    { num: '04', titleKey: 'algorithm.step4.title', descKey: 'algorithm.step4.desc' },
-    { num: '05', titleKey: 'algorithm.step5.title', descKey: 'algorithm.step5.desc' },
-    { num: '06', titleKey: 'algorithm.step6.title', descKey: 'algorithm.step6.desc' },
+    { num: '01', titleKey: 'approach.step1.title', descKey: 'approach.step1.desc' },
+    { num: '02', titleKey: 'approach.step2.title', descKey: 'approach.step2.desc' },
+    { num: '03', titleKey: 'approach.step3.title', descKey: 'approach.step3.desc' },
+    { num: '04', titleKey: 'approach.step4.title', descKey: 'approach.step4.desc' },
+    { num: '05', titleKey: 'approach.step5.title', descKey: 'approach.step5.desc' },
+    { num: '06', titleKey: 'approach.step6.title', descKey: 'approach.step6.desc' },
   ];
 
   return (
-    <section id="algorithm" className="py-32 bg-surface relative">
+    <section id="approach" className="py-32 bg-surface relative">
       <div className="absolute top-0 left-0 right-0 line-gold" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center gap-4 mb-6">
           <DaisyMotif size={16} className="text-primary" />
           <span className="text-xs tracking-[0.3em] uppercase text-primary font-medium">
-            {t('algorithm.sectionLabel')}
+            {t('approach.sectionLabel')}
           </span>
         </div>
 
         <h2 className="font-serif text-3xl md:text-5xl text-foreground mb-4">
-          {t('algorithm.title')}
+          {t('approach.title')}
         </h2>
         <p className="text-muted-foreground text-lg max-w-2xl mb-20">
-          {t('algorithm.subtitle')}
+          {t('approach.subtitle')}
         </p>
 
         {/* Steps grid */}
@@ -61,6 +61,16 @@ const AlgorithmSection: React.FC = () => {
             </Reveal>
           ))}
         </div>
+
+        {/* Engagement & fees */}
+        <Reveal className="mt-8 border border-primary/20 bg-primary/[0.03] rounded-sm p-8 md:p-10">
+          <span className="text-xs tracking-[0.2em] uppercase text-primary block mb-3">
+            {t('approach.feeTitle')}
+          </span>
+          <p className="text-foreground/80 leading-relaxed max-w-3xl">
+            {t('approach.feeDesc')}
+          </p>
+        </Reveal>
       </div>
     </section>
   );

@@ -41,7 +41,7 @@ const HeroSection: React.FC = () => {
         <div className="inline-flex items-center gap-2 mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <div className="w-8 h-px bg-primary/50" />
           <span className="text-xs tracking-[0.3em] uppercase text-primary font-medium">
-            {t('hero.since')}
+            {t('hero.badge')}
           </span>
           <div className="w-8 h-px bg-primary/50" />
         </div>
@@ -59,7 +59,7 @@ const HeroSection: React.FC = () => {
         {/* CTA */}
         <div className="opacity-0 animate-fade-in" style={{ animationDelay: '1.1s' }}>
           <a
-            href="#mandate"
+            href="#contact"
             className="group inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground text-sm tracking-widest uppercase font-medium hover:bg-primary/90 hover:gap-4 transition-all duration-300 glow-gold rounded-sm"
           >
             {t('hero.cta')}
@@ -69,8 +69,8 @@ const HeroSection: React.FC = () => {
 
         {/* History line */}
         <div className="mt-20 opacity-0 animate-fade-in" style={{ animationDelay: '1.4s' }}>
-          <p className="text-xs text-muted-foreground/60 max-w-md mx-auto leading-relaxed">
-            {t('history.text')}
+          <p className="text-xs text-muted-foreground/60 max-w-xl mx-auto leading-relaxed">
+            {t('hero.trust')}
           </p>
         </div>
       </div>

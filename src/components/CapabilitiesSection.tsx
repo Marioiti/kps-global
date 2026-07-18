@@ -2,39 +2,39 @@ import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import DaisyMotif from './DaisyMotif';
 import Reveal from '@/hooks/use-reveal';
-import { Shield, TrendingUp } from 'lucide-react';
+import { Layers, Globe } from 'lucide-react';
 
 const CapabilitiesSection: React.FC = () => {
   const { t } = useLanguage();
 
   const capabilities = [
     {
-      titleKey: 'capabilities.paymaster.title',
-      descKey: 'capabilities.paymaster.desc',
-      icon: Shield,
+      titleKey: 'sectors.industries.title',
+      descKey: 'sectors.industries.desc',
+      icon: Layers,
     },
     {
-      titleKey: 'capabilities.investment.title',
-      descKey: 'capabilities.investment.desc',
-      icon: TrendingUp,
+      titleKey: 'sectors.geographies.title',
+      descKey: 'sectors.geographies.desc',
+      icon: Globe,
     },
   ];
 
   return (
-    <section id="capabilities" className="py-32 relative">
+    <section id="sectors" className="py-32 relative">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center gap-4 mb-6">
           <DaisyMotif size={16} className="text-primary" />
           <span className="text-xs tracking-[0.3em] uppercase text-primary font-medium">
-            {t('capabilities.sectionLabel')}
+            {t('sectors.sectionLabel')}
           </span>
         </div>
 
         <h2 className="font-serif text-3xl md:text-5xl text-foreground mb-4">
-          {t('capabilities.title')}
+          {t('sectors.title')}
         </h2>
         <p className="text-muted-foreground text-lg max-w-2xl mb-20">
-          {t('capabilities.subtitle')}
+          {t('sectors.subtitle')}
         </p>
 
         <div className="grid md:grid-cols-2 gap-px bg-border/30 overflow-hidden rounded-sm">

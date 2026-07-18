@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import DaisyMotif from './DaisyMotif';
 import Reveal from '@/hooks/use-reveal';
-import { Fuel, Flame, Diamond } from 'lucide-react';
+import { Handshake, Compass, ShieldCheck } from 'lucide-react';
 import {
   Dialog,
   DialogContent,
@@ -12,29 +12,29 @@ import {
 
 const services = [
   {
-    titleKey: 'services.energy.title',
-    descKey: 'services.energy.desc',
-    detailsKey: 'services.energy.details',
-    icon: Fuel,
+    titleKey: 'services.trade.title',
+    descKey: 'services.trade.desc',
+    detailsKey: 'services.trade.details',
+    icon: Handshake,
   },
   {
-    titleKey: 'services.gas.title',
-    descKey: 'services.gas.desc',
-    detailsKey: 'services.gas.details',
-    icon: Flame,
+    titleKey: 'services.coo.title',
+    descKey: 'services.coo.desc',
+    detailsKey: 'services.coo.details',
+    icon: Compass,
   },
   {
-    titleKey: 'services.metals.title',
-    descKey: 'services.metals.desc',
-    detailsKey: 'services.metals.details',
-    icon: Diamond,
+    titleKey: 'services.compliance.title',
+    descKey: 'services.compliance.desc',
+    detailsKey: 'services.compliance.details',
+    icon: ShieldCheck,
   },
 ];
 
-const ALGORITHM_STEPS = [1, 2, 3, 4, 5] as const;
+const PROCESS_STEPS = [1, 2, 3, 4, 5] as const;
 
-const scrollToMandate = () => {
-  document.getElementById('mandate')?.scrollIntoView({ behavior: 'smooth' });
+const scrollToContact = () => {
+  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
 };
 
 const ServicesSection: React.FC = () => {
@@ -111,16 +111,16 @@ const ServicesSection: React.FC = () => {
 
                 <div className="border-t border-border pt-6">
                   <h4 className="font-serif font-semibold text-foreground mb-4">
-                    {t('services.algorithm.title')}
+                    {t('services.process.title')}
                   </h4>
                   <ol className="space-y-3">
-                    {ALGORITHM_STEPS.map((step) => (
+                    {PROCESS_STEPS.map((step) => (
                       <li key={step} className="flex gap-3 items-start">
                         <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full bg-primary/10 text-primary text-xs font-semibold">
                           {step}
                         </span>
                         <span className="text-muted-foreground text-sm leading-relaxed">
-                          {t(`services.algorithm.step${step}`)}
+                          {t(`services.process.step${step}`)}
                         </span>
                       </li>
                     ))}
@@ -131,11 +131,11 @@ const ServicesSection: React.FC = () => {
                   type="button"
                   onClick={() => {
                     setOpenModal(null);
-                    scrollToMandate();
+                    scrollToContact();
                   }}
                   className="w-full py-4 bg-primary text-primary-foreground text-sm tracking-widest uppercase font-medium hover:bg-primary/90 transition-colors glow-gold mt-4"
                 >
-                  {t('mandate.submit')}
+                  {t('services.cta')}
                 </button>
               </div>
             </DialogContent>

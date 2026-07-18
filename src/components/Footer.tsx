@@ -7,9 +7,9 @@ const Footer: React.FC = () => {
   const { t } = useLanguage();
 
   const trustElements = [
-    t('footer.zeroNoise'),
-    t('footer.noToxic'),
-    t('footer.reputation'),
+    t('footer.trust1'),
+    t('footer.trust2'),
+    t('footer.trust3'),
   ];
 
   return (
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/79145574000"
+              href="https://wa.me/6281337056615"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary-foreground/60 hover:text-accent transition-colors"
@@ -73,9 +73,16 @@ const Footer: React.FC = () => {
 
         {/* Bottom line */}
         <div className="mt-12 pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-primary-foreground/60 md:max-w-2xl">
-            {t('footer.registered')}
-          </p>
+          <div className="md:max-w-2xl space-y-2">
+            <p className="text-xs text-primary-foreground/60">
+              {t('footer.registered')}
+            </p>
+            <p className="text-xs text-primary-foreground/50">
+              {t('footer.entity')}
+              <span className="mx-2 text-primary-foreground/30">·</span>
+              {t('footer.address')}
+            </p>
+          </div>
           <div className="flex flex-col md:items-end gap-2 shrink-0">
             <a
               href="https://erp.kpsglobal.id/login"

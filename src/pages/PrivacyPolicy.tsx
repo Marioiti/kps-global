@@ -61,7 +61,7 @@ const PrivacyPolicy: React.FC = () => {
   const { t, language, setLanguage } = useLanguage();
 
   useEffect(() => {
-    document.title = `${t('privacy.title')} — KPS Global Solutions`;
+    document.title = `${t('privacy.title')} — KPS Global`;
     window.scrollTo(0, 0);
   }, [t]);
 
