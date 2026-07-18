@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Language } from '@/i18n/translations';
 import kpsLogo from '@/assets/kps-logo.png';
@@ -13,6 +13,14 @@ const languages: { code: Language; label: string }[] = [
 const Navbar: React.FC = () => {
   const { language, setLanguage, t } = useLanguage();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   const navLinks = [
     { key: 'nav.philosophy', href: '#philosophy' },
@@ -29,9 +37,19 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-xl border-b transition-all duration-300 ${
+        scrolled
+          ? 'bg-background/90 border-border/60 shadow-sm'
+          : 'bg-background/60 border-transparent'
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div
+          className={`flex items-center justify-between transition-all duration-300 ${
+            scrolled ? 'h-14 lg:h-16' : 'h-16 lg:h-20'
+          }`}
+        >
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
             <img src={kpsLogo} alt={t('footer.companyName')} className="h-14 w-auto transition-transform duration-500 group-hover:scale-105" />

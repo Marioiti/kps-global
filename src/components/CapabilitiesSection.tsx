@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import DaisyMotif from './DaisyMotif';
+import Reveal from '@/hooks/use-reveal';
 import { Shield, TrendingUp } from 'lucide-react';
 
 const CapabilitiesSection: React.FC = () => {
@@ -36,12 +37,13 @@ const CapabilitiesSection: React.FC = () => {
           {t('capabilities.subtitle')}
         </p>
 
-        <div className="grid md:grid-cols-2 gap-px bg-border/30">
-          {capabilities.map((cap) => {
+        <div className="grid md:grid-cols-2 gap-px bg-border/30 overflow-hidden rounded-sm">
+          {capabilities.map((cap, i) => {
             const Icon = cap.icon;
             return (
-              <div
+              <Reveal
                 key={cap.titleKey}
+                delay={i * 140}
                 className="bg-background p-10 md:p-16 group hover:bg-secondary/20 transition-colors duration-500"
               >
                 <Icon
@@ -55,7 +57,7 @@ const CapabilitiesSection: React.FC = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   {t(cap.descKey)}
                 </p>
-              </div>
+              </Reveal>
             );
           })}
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import DaisyMotif from './DaisyMotif';
+import Reveal from '@/hooks/use-reveal';
 
 const PhilosophySection: React.FC = () => {
   const { t } = useLanguage();
@@ -45,10 +46,11 @@ const PhilosophySection: React.FC = () => {
         </p>
 
         {/* Three pillars */}
-        <div className="grid md:grid-cols-3 gap-px bg-border/30">
-          {pillars.map((pillar) => (
-            <div
+        <div className="grid md:grid-cols-3 gap-px bg-border/30 overflow-hidden rounded-sm">
+          {pillars.map((pillar, i) => (
+            <Reveal
               key={pillar.titleKey}
+              delay={i * 120}
               className="bg-background p-8 md:p-12 group hover:bg-secondary/30 transition-colors duration-500"
             >
               <span className="text-2xl mb-6 block opacity-40 group-hover:opacity-100 transition-opacity duration-500">
@@ -63,7 +65,7 @@ const PhilosophySection: React.FC = () => {
               <p className="text-muted-foreground leading-relaxed text-sm">
                 {t(pillar.descKey)}
               </p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

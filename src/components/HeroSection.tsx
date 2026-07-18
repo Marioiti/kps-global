@@ -1,16 +1,30 @@
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import kpsLogo from '@/assets/kps-logo.png';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, ArrowRight } from 'lucide-react';
 
 const HeroSection: React.FC = () => {
   const { t } = useLanguage();
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Ambient gradient wash */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            'radial-gradient(120% 80% at 50% 0%, hsl(222 47% 96%) 0%, hsl(var(--background)) 55%)',
+        }}
+      />
+
       {/* Background motif */}
       <div className="absolute inset-0 flex items-center justify-center opacity-[0.04]">
-        <img src={kpsLogo} alt="" className="w-[800px] h-[800px] object-contain animate-petal-rotate" />
+        <img
+          src={kpsLogo}
+          alt=""
+          aria-hidden="true"
+          className="w-[800px] h-[800px] max-w-[130vw] object-contain animate-petal-rotate motion-reduce:animate-none"
+        />
       </div>
 
       {/* Subtle grid */}
@@ -46,9 +60,10 @@ const HeroSection: React.FC = () => {
         <div className="opacity-0 animate-fade-in" style={{ animationDelay: '1.1s' }}>
           <a
             href="#mandate"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground text-sm tracking-widest uppercase font-medium hover:bg-primary/90 transition-all duration-300 glow-gold"
+            className="group inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground text-sm tracking-widest uppercase font-medium hover:bg-primary/90 hover:gap-4 transition-all duration-300 glow-gold rounded-sm"
           >
             {t('hero.cta')}
+            <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
           </a>
         </div>
 

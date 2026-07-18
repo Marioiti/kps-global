@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import DaisyMotif from './DaisyMotif';
 import AlgorithmTermsModal from './AlgorithmTermsModal';
@@ -9,6 +10,7 @@ const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT;
 const MandateForm: React.FC = () => {
   const { t } = useLanguage();
   const [agreed, setAgreed] = useState(false);
+  const [privacyConsent, setPrivacyConsent] = useState(false);
   const [termsModalOpen, setTermsModalOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -23,7 +25,7 @@ const MandateForm: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!agreed) return;
+    if (!agreed || !privacyConsent) return;
 
     if (!FORMSPREE_ENDPOINT) {
       toast.error(t('mandate.error'));
@@ -43,6 +45,8 @@ const MandateForm: React.FC = () => {
           financial: formData.financial,
           contactPerson: formData.contactPerson,
           contactChannel: formData.contactChannel,
+          privacyConsent: true,
+          consentAt: new Date().toISOString(),
         }),
       });
 
@@ -140,9 +144,6 @@ const MandateForm: React.FC = () => {
               <option value="" disabled>{t('mandate.commodityPlaceholder')}</option>
               <option value="en590">{t('mandate.commodityEN590')}</option>
               <option value="jet_a1">{t('mandate.commodityJetA1')}</option>
-              <option value="d6">{t('mandate.commodityD6')}</option>
-              <option value="espo">{t('mandate.commodityESPO')}</option>
-              <option value="urals">{t('mandate.commodityUrals')}</option>
               <option value="lng">{t('mandate.commodityLNG')}</option>
               <option value="lpg">{t('mandate.commodityLPG')}</option>
               <option value="aluminum">{t('mandate.commodityAluminum')}</option>
@@ -226,6 +227,30 @@ const MandateForm: React.FC = () => {
             </label>
           </div>
 
+          {/* Personal-data processing consent */}
+          <div className="flex items-start gap-3">
+            <input
+              type="checkbox"
+              id="privacyConsent"
+              checked={privacyConsent}
+              onChange={(e) => setPrivacyConsent(e.target.checked)}
+              className="mt-1 w-4 h-4 border border-border bg-secondary/50 accent-primary cursor-pointer"
+              required
+            />
+            <label htmlFor="privacyConsent" className="text-sm text-muted-foreground cursor-pointer leading-relaxed">
+              {t('mandate.privacyConsentPrefix')}
+              <Link
+                to="/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline underline-offset-2 font-medium"
+              >
+                {t('mandate.privacyConsentLink')}
+              </Link>
+              {t('mandate.privacyConsentSuffix')}
+            </label>
+          </div>
+
           <AlgorithmTermsModal
             open={termsModalOpen}
             onOpenChange={setTermsModalOpen}
@@ -235,7 +260,7 @@ const MandateForm: React.FC = () => {
           {/* Submit */}
           <button
             type="submit"
-            disabled={!agreed || submitting}
+            disabled={!agreed || !privacyConsent || submitting}
             className="w-full py-4 bg-primary text-primary-foreground text-sm tracking-widest uppercase font-medium hover:bg-primary/90 transition-all duration-300 disabled:opacity-30 disabled:cursor-not-allowed glow-gold mt-4"
           >
             {submitting ? t('mandate.submitting') : t('mandate.submit')}

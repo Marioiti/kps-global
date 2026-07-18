@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import DaisyMotif from './DaisyMotif';
+import Reveal from '@/hooks/use-reveal';
 
 const AlgorithmSection: React.FC = () => {
   const { t } = useLanguage();
@@ -34,10 +35,11 @@ const AlgorithmSection: React.FC = () => {
         </p>
 
         {/* Steps grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border/30">
-          {steps.map((step) => (
-            <div
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border/30 overflow-hidden rounded-sm">
+          {steps.map((step, i) => (
+            <Reveal
               key={step.num}
+              delay={(i % 3) * 100}
               className="bg-background p-8 md:p-10 group hover:bg-secondary/20 transition-colors duration-500 relative"
             >
               {/* Step number */}
@@ -56,7 +58,7 @@ const AlgorithmSection: React.FC = () => {
 
               {/* Connector line (visual only) */}
               <div className="absolute bottom-0 left-8 right-8 h-px bg-gradient-to-r from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

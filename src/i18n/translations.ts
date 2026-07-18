@@ -38,21 +38,21 @@ export const translations: Record<Language, Record<string, string>> = {
     'services.subtitle': 'Structured access to primary commodity markets through verified supply chains and institutional-grade procedures.',
 
     'services.energy.title': 'Energy & Fuel',
-    'services.energy.desc': 'EN590 (10ppm), Jet A1, D6, ESPO, Urals. Direct access to 9 verified suppliers across 25 operational procedures.',
-    'services.energy.details': 'EN590 (10ppm diesel), Jet A1, D6 fuel oil, and crude oil (ESPO, Urals). Direct access to 9 verified suppliers and 25 operational procedures. Structured documentation and delivery protocols for institutional clients.',
+    'services.energy.desc': 'EN590 (10ppm) diesel and Jet A1 aviation fuel. Refinery-direct supply chains with verified documentation at every step.',
+    'services.energy.details': 'EN590 (10ppm diesel) and Jet A1 aviation fuel. Refinery-direct supply chains with structured documentation and delivery protocols for institutional clients. Every counterparty passes sanctions and KYC screening before engagement.',
 
     'services.gas.title': 'Gas (LNG/LPG)',
-    'services.gas.desc': 'LNG/LPG project-based supply with structured 30% discount models. Long-term contractual frameworks for institutional buyers.',
-    'services.gas.details': 'LNG and LPG supply under dual-contract structure: FOB commodity contract plus separate Logistics contract. 100% price transparency. Project-based supply with structured 30% discount models for institutional buyers.',
+    'services.gas.desc': 'LNG and LPG project-based supply. Long-term contractual frameworks for institutional buyers.',
+    'services.gas.details': 'LNG and LPG supply under dual-contract structure: FOB commodity contract plus a separate logistics contract. Full price transparency and project-based volumes for institutional buyers.',
 
     'services.metals.title': 'Strategic Metals',
-    'services.metals.desc': 'Aluminum (A7) and Sulphur contractual supply. Standardized delivery protocols with full compliance documentation.',
-    'services.metals.details': 'Aluminum A7 and Sulphur contractual supply. Payment security for the entire transaction chain. Standardized delivery protocols with full compliance documentation. Escrow and title transfer under institutional-grade procedures.',
+    'services.metals.desc': 'Aluminum and sulphur contractual supply. Standardized delivery protocols with full compliance documentation.',
+    'services.metals.details': 'Aluminum and sulphur contractual supply from non-sanctioned origins. Standardized delivery protocols with full compliance documentation. Settlement and title transfer coordinated through licensed banks and independent escrow agents.',
 
     'services.algorithm.title': 'The KPS Algorithm',
     'services.algorithm.step1': 'Screening: Entity verification, compliance check, and background assessment.',
     'services.algorithm.step2': 'Structure: LOI, ICPO, and financial readiness verification (POF/BCL/SBLC).',
-    'services.algorithm.step3': 'Compliance: KYC/AML procedures, sanctions screening, UBO verification Source of Funds analysis and jurisdiction check.',
+    'services.algorithm.step3': 'Compliance: KYC/AML procedures, sanctions screening (OFAC, EU, UN, UK), UBO verification, Source of Funds analysis and jurisdiction check.',
     'services.algorithm.step4': 'Mandate: Contract terms, payment mechanisms, and logistics planning.',
     'services.algorithm.step5': 'Execution: TCIA signing, inspection, title transfer, and payment settlement.',
 
@@ -62,7 +62,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'capabilities.subtitle': 'Beyond brokerage—we architect the entire transaction lifecycle.',
 
     'capabilities.paymaster.title': 'Transaction Lifecycle Coordination',
-    'capabilities.paymaster.desc': 'KPS acts as the secure Transaction Manager for the entire transaction chain. Escrow management, fund verification, and Financial Workflow Compliance.',
+    'capabilities.paymaster.desc': 'KPS coordinates the entire transaction lifecycle as an independent consultant: settlement discipline through licensed banks and independent escrow agents, document verification, and financial workflow compliance. KPS never holds client funds.',
 
     'capabilities.investment.title': 'Investment Models',
     'capabilities.investment.desc': 'Financial analysis and investment modeling for international trade. Structured deal frameworks with risk-adjusted returns.',
@@ -79,7 +79,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'algorithm.step2.desc': 'LOI, ICPO, and financial readiness verification (POF/BCL/SBLC).',
 
     'algorithm.step3.title': 'Compliance Review',
-    'algorithm.step3.desc': 'KKYC/AML procedures, sanctions screening, UBO verification Source of Funds analysis and jurisdiction check.',
+    'algorithm.step3.desc': 'KYC/AML procedures, sanctions screening (OFAC, EU, UN, UK), UBO verification, Source of Funds analysis and jurisdiction check.',
 
     'algorithm.step4.title': 'Deal Structuring',
     'algorithm.step4.desc': 'Contract terms, payment mechanisms, and logistics planning.',
@@ -106,12 +106,9 @@ export const translations: Record<Language, Record<string, string>> = {
     'mandate.commodityPlaceholder': 'Select commodity',
     'mandate.commodityEN590': 'EN590 (10ppm)',
     'mandate.commodityJetA1': 'Jet A1',
-    'mandate.commodityD6': 'D6',
-    'mandate.commodityESPO': 'ESPO',
-    'mandate.commodityUrals': 'Urals',
     'mandate.commodityLNG': 'LNG',
     'mandate.commodityLPG': 'LPG',
-    'mandate.commodityAluminum': 'Aluminum (A7)',
+    'mandate.commodityAluminum': 'Aluminum',
     'mandate.commoditySulphur': 'Sulphur',
     'mandate.financial': 'Financial Logistics Readiness',
     'mandate.financialPlaceholder': 'Select instrument',
@@ -125,6 +122,9 @@ export const translations: Record<Language, Record<string, string>> = {
     'mandate.agreePrefix': 'I agree to follow the ',
     'mandate.agreeLink': 'KPS non-negotiable algorithm',
     'mandate.agreeSuffix': '.',
+    'mandate.privacyConsentPrefix': 'I consent to the processing of my personal data in accordance with the ',
+    'mandate.privacyConsentLink': 'Privacy Policy',
+    'mandate.privacyConsentSuffix': '.',
     'mandate.acceptTerms': 'I Agree',
     'mandate.downloadPdf': 'Download PDF Version',
     'algorithm.termsFull': `KPS GLOBAL SOLUTIONS: TERMS OF SERVICE & TRANSACTION ALGORITHM
@@ -139,9 +139,11 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
 
 3. Non-Circumvention: The Client shall not, under any circumstances, contact, negotiate, or conclude transactions with any Introduced Party (Suppliers, Refineries, or Mandates) without the prior written consent of the Consultant. This protection remains in force for two (2) years globally.
 
-4. Liquidated Damages: Any breach of the non-circumvention or payment clauses shall trigger an immediate penalty of USD 100,000 plus 100% of the total projected commissions.
+4. Sanctions & Export Controls: The Consultant engages exclusively in transactions involving non-sanctioned goods and counterparties. All parties undergo KYC/AML and sanctions screening (OFAC, EU, UN, UK) prior to any engagement. The Consultant reserves the right to decline or terminate any engagement presenting sanctions exposure, without liability.
 
-5. Jurisdiction: These terms are governed by the laws of Hong Kong. Any disputes shall be resolved via ICC Arbitration in Hong Kong.`,
+5. Liquidated Damages: Any breach of the non-circumvention or payment clauses shall trigger liquidated damages as specified in the executed TCIA / Consulting Agreement.
+
+6. Jurisdiction: These terms are governed by the laws of Hong Kong. Any disputes shall be resolved via ICC Arbitration in Hong Kong.`,
     'algorithm.termsTitle': 'KPS GLOBAL SOLUTIONS: TERMS OF SERVICE & TRANSACTION ALGORITHM',
     'algorithm.scrollHint': 'Scroll to the end to enable the Accept button.',
     'mandate.submit': 'Request a Strategic Briefing',
@@ -152,7 +154,9 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     // Footer
     'footer.companyName': 'KPS Global Solutions',
     'footer.tagline': 'Structuring the Essence of Global Trade',
-    'footer.registered': 'KPS Global Solutions is a trade name of PT Kusuma Petak Sari, a management consulting firm registered in Indonesia. We do not provide regulated financial, banking, or money transfer services. We act strictly as a transaction coordinator and consultant.',
+    'footer.registered': 'KPS Global Solutions is a trade name of PT Kusuma Petak Sari, a management consulting firm registered in Indonesia. We do not provide regulated financial, banking, or money transfer services, and we never hold client funds. We act strictly as a transaction coordinator and consultant, working exclusively with non-sanctioned goods and screened counterparties.',
+    'footer.staff': 'Team Access',
+    'footer.privacy': 'Privacy Policy',
     'footer.rights': 'All rights reserved.',
     'footer.zeroNoise': 'Zero Noise',
     'footer.noToxic': 'No Toxic Chains',
@@ -165,6 +169,43 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     // NotFound
     'notFound.title': 'Oops! Page not found',
     'notFound.backHome': 'Return to Home',
+
+    // Privacy Policy
+    'privacy.title': 'Privacy Policy',
+    'privacy.backHome': 'Back to Home',
+    'privacy.lastUpdatedLabel': 'Last updated',
+    'privacy.lastUpdatedDate': '__________',
+    'privacy.intro': `KPS Global Solutions is a trade name of **PT Kusuma Petak Sari** ("KPS", "we", "us"), a management consulting firm registered in the Republic of Indonesia. This Policy explains how we handle personal data collected through this website (kpsglobal.id), in line with **Law of the Republic of Indonesia No. 27 of 2022 on Personal Data Protection (UU PDP)** and internationally recognised data protection principles.\n\nThis Policy covers only the personal data we collect through this website. Data processed under separate business or agency agreements is governed by those agreements and their own data-protection terms.`,
+
+    'privacy.s1.title': '1. Data We Collect',
+    'privacy.s1.body': `When you submit the mandate / strategic briefing form, we collect the information you provide:\n\n- Entity name and jurisdiction\n- Your role (end buyer, mandate, or intermediary)\n- Commodity of interest\n- Financial-readiness instrument (POF / BCL / SBLC)\n- Contact person's full name\n- Contact channel (WhatsApp, Telegram, or phone number)\n\nWe also automatically record limited technical data when you submit a form or accept our terms: an approximate timestamp, the selected interface language, browser user-agent, a randomly generated session identifier, and the IP address seen by our form provider. We do **not** knowingly collect special-category data (health, religion, biometrics) and ask that you do not include such data in free-text fields.`,
+
+    'privacy.s2.title': '2. Why We Process Your Data',
+    'privacy.s2.body': `We process your personal data to:\n\n- Respond to and evaluate your mandate or briefing request\n- Carry out counterparty due diligence (KYC) and compliance screening\n- Prepare and perform contracts and consulting engagements\n- Keep records required for legal and accounting purposes`,
+
+    'privacy.s3.title': '3. Legal Basis',
+    'privacy.s3.body': `We rely on your **consent** (given when you tick the consent box and submit the form), on the necessity of taking **steps prior to entering into a contract** at your request, and on our **legitimate interest** in assessing and conducting business engagements — as permitted under the UU PDP.`,
+
+    'privacy.s4.title': '4. Sharing & International Transfers',
+    'privacy.s4.body': `We do not sell your personal data. We share it only with service providers who help us operate this website and communications, and with professional advisers where necessary.\n\nOur mandate form is delivered through **Formspree**, a form-processing service operated from the United States, and via our email provider. This means data submitted through the form is transferred to and stored on servers outside Indonesia. We take reasonable steps to ensure such transfers are subject to appropriate safeguards and a level of protection consistent with the UU PDP.`,
+
+    'privacy.s5.title': '5. Data Retention',
+    'privacy.s5.body': `We keep personal data only for as long as necessary for the purposes above: enquiry and due-diligence records for up to five (5) years from our last interaction, and contract-related data for the term of the contract plus the applicable limitation period. After that, data is deleted or anonymised.`,
+
+    'privacy.s6.title': '6. Your Rights',
+    'privacy.s6.body': `Subject to the UU PDP, you may request to access, correct, update, delete, or restrict the processing of your personal data, withdraw your consent at any time, and object to certain processing. To exercise any of these rights, contact us using the details in Section 9. We respond within the timeframe required by applicable law.`,
+
+    'privacy.s7.title': '7. Cookies & Tracking',
+    'privacy.s7.body': `This website does **not** use advertising or tracking cookies. We store a single functional preference (your chosen language) in your browser's local storage so the site remembers your language. No consent banner is required for this strictly functional use.`,
+
+    'privacy.s8.title': '8. Data Security',
+    'privacy.s8.body': `We apply technical and organisational measures appropriate to the risk, including encryption in transit (TLS), access on a need-to-know basis, and a prohibition on storing personal data permanently in email or messengers. No method of transmission over the internet is completely secure, but we work to protect your data at all times.`,
+
+    'privacy.s9.title': '9. Contact Us',
+    'privacy.s9.body': `For any privacy question or to exercise your rights, contact:\n\n**PT Kusuma Petak Sari (KPS Global Solutions)**\nAddress: __________\nE-mail: mnc@kpsglobal.id`,
+
+    'privacy.s10.title': '10. Changes to This Policy',
+    'privacy.s10.body': `We review this Policy at least annually and whenever our processing operations or applicable law change. The current version is always available on this page, with the "Last updated" date shown above.`,
   },
 
   ru: {
@@ -200,21 +241,21 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'services.subtitle': 'Структурированный доступ к первичным товарным рынкам через верифицированные цепочки поставок.',
 
     'services.energy.title': 'Энергоносители',
-    'services.energy.desc': 'EN590 (10ppm), Jet A1, D6, ESPO, Urals. Прямой доступ к 9 верифицированным поставщикам через 25 операционных процедур.',
-    'services.energy.details': 'EN590 (10ppm дизель), Jet A1, D6 мазут, сырая нефть (ESPO, Urals). Прямой доступ к 9 верифицированным поставщикам и 25 операционным процедурам. Структурированная документация и протоколы поставки для институциональных клиентов.',
+    'services.energy.desc': 'Дизель EN590 (10ppm) и авиатопливо Jet A1. Прямые цепочки поставок от НПЗ с верифицированной документацией на каждом шаге.',
+    'services.energy.details': 'Дизель EN590 (10ppm) и авиатопливо Jet A1. Прямые цепочки поставок от НПЗ, структурированная документация и протоколы поставки для институциональных клиентов. Каждый контрагент проходит санкционный и KYC-скрининг до начала работы.',
 
     'services.gas.title': 'Газ (СПГ/СУГ)',
-    'services.gas.desc': 'Проектные поставки СПГ/СУГ с моделями скидки 30%. Долгосрочные контрактные рамки для институциональных покупателей.',
-    'services.gas.details': 'Поставки СПГ и СУГ по двухконтрактной структуре: контракт FOB на товар плюс отдельный контракт на логистику. 100% ценовая прозрачность. Проектные поставки со структурированными моделями скидки 30% для институциональных покупателей.',
+    'services.gas.desc': 'Проектные поставки СПГ и СУГ. Долгосрочные контрактные рамки для институциональных покупателей.',
+    'services.gas.details': 'Поставки СПГ и СУГ по двухконтрактной структуре: контракт FOB на товар плюс отдельный контракт на логистику. Полная ценовая прозрачность и проектные объёмы для институциональных покупателей.',
 
     'services.metals.title': 'Стратегические металлы',
-    'services.metals.desc': 'Контрактные поставки алюминия (А7) и серы. Стандартизированные протоколы поставки с полной комплаенс-документацией.',
-    'services.metals.details': 'Контрактные поставки алюминия А7 и серы. Защита пеймастера для всей транзакционной цепочки. Стандартизированные протоколы поставки с полной комплаенс-документацией. Эскроу и передача титула по процедурам институционального уровня.',
+    'services.metals.desc': 'Контрактные поставки алюминия и серы. Стандартизированные протоколы поставки с полной комплаенс-документацией.',
+    'services.metals.details': 'Контрактные поставки алюминия и серы несанкционного происхождения. Стандартизированные протоколы поставки с полной комплаенс-документацией. Расчёты и передача титула — через лицензированные банки и независимых эскроу-агентов.',
 
     'services.algorithm.title': 'Алгоритм KPS',
     'services.algorithm.step1': 'Скрининг: Верификация компании, проверка комплаенса и оценка репутации.',
     'services.algorithm.step2': 'Структура: LOI, ICPO и верификация финансовой готовности (POF/BCL/SBLC).',
-    'services.algorithm.step3': 'Комплаенс: Процедуры KKYC/AML, проверка санкций, проверка UBO, анализ источников средств и проверка юрисдикции.',
+    'services.algorithm.step3': 'Комплаенс: Процедуры KYC/AML, санкционный скрининг (OFAC, EU, UN, UK), проверка UBO, анализ источников средств и проверка юрисдикции.',
     'services.algorithm.step4': 'Мандат: Условия контракта, платёжные механизмы и логистическое планирование.',
     'services.algorithm.step5': 'Исполнение: Подписание TCIA, инспекция, передача титула и расчёт.',
 
@@ -223,7 +264,7 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'capabilities.subtitle': 'Больше чем брокеридж — мы проектируем весь жизненный цикл транзакции.',
 
     'capabilities.paymaster.title': 'Координация жизненного цикла транзакции',
-    'capabilities.paymaster.desc': 'KPS, как менеджер безопасных транзакций для всей цепочки транзакций, отвечает за управление хранением, проверку фондов и соблюдение финансовых рабочих процессов.',
+    'capabilities.paymaster.desc': 'KPS координирует весь жизненный цикл сделки как независимый консультант: расчётная дисциплина через лицензированные банки и независимых эскроу-агентов, проверка документов и соблюдение финансовых процедур. KPS не хранит средства клиентов.',
 
     'capabilities.investment.title': 'Инвестиционные модели',
     'capabilities.investment.desc': 'Финансовый анализ и инвестиционное моделирование для международной торговли. Структурированные сделки с оптимизированным риском.',
@@ -239,7 +280,7 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'algorithm.step2.desc': 'LOI, ICPO и верификация финансовой готовности (POF/BCL/SBLC).',
 
     'algorithm.step3.title': 'Комплаенс-ревью',
-    'algorithm.step3.desc': 'Процедуры KKYC/AML, проверка санкций, проверка UBO, анализ источников средств и проверка юрисдикции.',
+    'algorithm.step3.desc': 'Процедуры KYC/AML, санкционный скрининг (OFAC, EU, UN, UK), проверка UBO, анализ источников средств и проверка юрисдикции.',
 
     'algorithm.step4.title': 'Структурирование сделки',
     'algorithm.step4.desc': 'Условия контракта, платёжные механизмы и логистическое планирование.',
@@ -265,12 +306,9 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'mandate.commodityPlaceholder': 'Выберите товар',
     'mandate.commodityEN590': 'EN590 (10ppm)',
     'mandate.commodityJetA1': 'Jet A1',
-    'mandate.commodityD6': 'D6',
-    'mandate.commodityESPO': 'ESPO',
-    'mandate.commodityUrals': 'Urals',
     'mandate.commodityLNG': 'СПГ',
     'mandate.commodityLPG': 'СУГ',
-    'mandate.commodityAluminum': 'Алюминий (А7)',
+    'mandate.commodityAluminum': 'Алюминий',
     'mandate.commoditySulphur': 'Сера',
     'mandate.financial': 'Финансовая готовность',
     'mandate.financialPlaceholder': 'Выберите инструмент',
@@ -284,6 +322,9 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'mandate.agreePrefix': 'Я согласен следовать ',
     'mandate.agreeLink': 'безусловному алгоритму KPS',
     'mandate.agreeSuffix': '.',
+    'mandate.privacyConsentPrefix': 'Я даю согласие на обработку моих персональных данных в соответствии с ',
+    'mandate.privacyConsentLink': 'Политикой конфиденциальности',
+    'mandate.privacyConsentSuffix': '.',
     'mandate.acceptTerms': 'Согласен',
     'mandate.downloadPdf': 'Скачать PDF-версию',
     'algorithm.termsFull': `KPS GLOBAL SOLUTIONS: УСЛОВИЯ ИСПОЛЬЗОВАНИЯ И ТРАНЗАКЦИОННЫЙ АЛГОРИТМ
@@ -298,9 +339,11 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
 
 3. Запрет на обход (Non-Circumvention): Клиент обязуется ни при каких обстоятельствах не вступать в контакт, не вести переговоры и не заключать сделки с любой Представленной стороной (Поставщиками, НПЗ или мандатами) без предварительного письменного согласия Консультанта. Данная защита действует в течение двух (2) лет по всему миру.
 
-4. Штрафные санкции: Любое нарушение пунктов об обходе или невыплате влечет за собой немедленный штраф в размере 100 000 долларов США плюс 100% от общей суммы прогнозируемой комиссии.
+4. Санкции и экспортный контроль: Консультант работает исключительно со сделками по несанкционным товарам и с несанкционными контрагентами. Все стороны проходят KYC/AML и санкционный скрининг (OFAC, EU, UN, UK) до начала взаимодействия. Консультант оставляет за собой право отказаться от любой сделки с санкционной экспозицией без какой-либо ответственности.
 
-5. Юрисдикция: Настоящие условия регулируются законодательством Гонконга. Любые споры подлежат разрешению через арбитраж ICC в Гонконге.`,
+5. Штрафные санкции: Любое нарушение пунктов об обходе или невыплате влечёт ответственность в размере, установленном подписанным TCIA / Консалтинговым соглашением.
+
+6. Юрисдикция: Настоящие условия регулируются законодательством Гонконга. Любые споры подлежат разрешению через арбитраж ICC в Гонконге.`,
     'algorithm.termsTitle': 'KPS GLOBAL SOLUTIONS: УСЛОВИЯ ИСПОЛЬЗОВАНИЯ И ТРАНЗАКЦИОННЫЙ АЛГОРИТМ',
     'algorithm.scrollHint': 'Прокрутите до конца, чтобы активировать кнопку «Согласен».',
     'mandate.submit': 'Запросить стратегический брифинг',
@@ -310,7 +353,9 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
 
     'footer.companyName': 'KPS Global Solutions',
     'footer.tagline': 'Структурируя суть глобальной торговли',
-    'footer.registered': 'KPS Global Solutions — это торговое название PT Kusuma Petak Sari, консалтинговой компании, зарегистрированной в Индонезии. Мы не предоставляем регулируемые финансовые, банковские или денежные переводы. Мы действуем исключительно в качестве координатора транзакций и консультанта.',
+    'footer.registered': 'KPS Global Solutions — торговое название PT Kusuma Petak Sari, консалтинговой компании, зарегистрированной в Индонезии. Мы не предоставляем регулируемые финансовые, банковские услуги и денежные переводы и не храним средства клиентов. Мы действуем исключительно как координатор сделок и консультант, работая только с несанкционными товарами и проверенными контрагентами.',
+    'footer.staff': 'Для сотрудников',
+    'footer.privacy': 'Политика конфиденциальности',
     'footer.rights': 'Все права защищены.',
     'footer.zeroNoise': 'Нулевой шум',
     'footer.noToxic': 'Без токсичных цепочек',
@@ -321,6 +366,43 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
 
     'notFound.title': 'Страница не найдена',
     'notFound.backHome': 'Вернуться на главную',
+
+    // Privacy Policy
+    'privacy.title': 'Политика конфиденциальности',
+    'privacy.backHome': 'На главную',
+    'privacy.lastUpdatedLabel': 'Последнее обновление',
+    'privacy.lastUpdatedDate': '__________',
+    'privacy.intro': `KPS Global Solutions — торговое название **PT Kusuma Petak Sari** («KPS», «мы»), консалтинговой компании, зарегистрированной в Республике Индонезия. Настоящая Политика описывает, как мы обрабатываем персональные данные, собираемые через этот сайт (kpsglobal.id), в соответствии с **Законом Республики Индонезия № 27 от 2022 года о защите персональных данных (UU PDP)** и общепризнанными принципами защиты данных.\n\nПолитика распространяется только на персональные данные, собираемые через этот сайт. Данные, обрабатываемые в рамках отдельных деловых или агентских договоров, регулируются этими договорами и их собственными условиями о защите данных.`,
+
+    'privacy.s1.title': '1. Какие данные мы собираем',
+    'privacy.s1.body': `При отправке формы мандата / запроса на стратегический брифинг мы собираем предоставленные вами сведения:\n\n- Название компании и юрисдикция\n- Ваша роль (конечный покупатель, мандат или посредник)\n- Интересующий товар\n- Инструмент финансовой готовности (POF / BCL / SBLC)\n- ФИО контактного лица\n- Контактный канал (WhatsApp, Telegram или телефон)\n\nМы также автоматически фиксируем ограниченные технические данные при отправке формы или принятии условий: приблизительную отметку времени, выбранный язык интерфейса, user-agent браузера, случайно сгенерированный идентификатор сессии и IP-адрес, видимый нашему провайдеру форм. Мы **не** собираем осознанно специальные категории данных (здоровье, религия, биометрия) и просим не указывать такие данные в свободных полях.`,
+
+    'privacy.s2.title': '2. Цели обработки',
+    'privacy.s2.body': `Мы обрабатываем ваши персональные данные, чтобы:\n\n- Рассмотреть и оценить ваш запрос на мандат или брифинг\n- Провести проверку контрагента (KYC) и комплаенс-скрининг\n- Подготовить и исполнить договоры и консультационные соглашения\n- Вести учёт, требуемый законодательством и правилами бухгалтерского учёта`,
+
+    'privacy.s3.title': '3. Правовые основания',
+    'privacy.s3.body': `Мы опираемся на ваше **согласие** (даётся при отметке чекбокса и отправке формы), на необходимость совершения **преддоговорных действий** по вашему запросу, а также на наш **законный интерес** в оценке и ведении деловых отношений — как это допускается UU PDP.`,
+
+    'privacy.s4.title': '4. Передача и трансграничность',
+    'privacy.s4.body': `Мы не продаём ваши персональные данные. Мы передаём их только поставщикам услуг, помогающим нам работать с этим сайтом и коммуникациями, а также профессиональным консультантам при необходимости.\n\nФорма мандата обрабатывается через сервис **Formspree** (работает из США) и через нашего email-провайдера. Это означает, что данные, отправленные через форму, передаются и хранятся на серверах за пределами Индонезии. Мы принимаем разумные меры, чтобы такие передачи сопровождались надлежащими гарантиями и уровнем защиты, соответствующим UU PDP.`,
+
+    'privacy.s5.title': '5. Сроки хранения',
+    'privacy.s5.body': `Мы храним персональные данные не дольше, чем необходимо для указанных целей: записи по обращениям и проверке контрагентов — до пяти (5) лет с даты последнего взаимодействия; данные, связанные с договорами, — на срок договора плюс применимый срок исковой давности. По истечении этих сроков данные удаляются или обезличиваются.`,
+
+    'privacy.s6.title': '6. Права субъекта данных',
+    'privacy.s6.body': `В соответствии с UU PDP вы вправе запросить доступ, исправление, обновление, удаление или ограничение обработки ваших персональных данных, отозвать согласие в любой момент и возражать против отдельных видов обработки. Для реализации любого из этих прав свяжитесь с нами по контактам из Раздела 9. Мы отвечаем в срок, установленный применимым законодательством.`,
+
+    'privacy.s7.title': '7. Cookies и трекинг',
+    'privacy.s7.body': `Этот сайт **не** использует рекламные или трекинговые cookie. Мы храним единственную функциональную настройку (выбранный язык) в локальном хранилище браузера, чтобы сайт запоминал ваш язык. Для такого строго функционального использования баннер согласия не требуется.`,
+
+    'privacy.s8.title': '8. Защита данных',
+    'privacy.s8.body': `Мы применяем технические и организационные меры, соразмерные рискам: шифрование при передаче (TLS), доступ по принципу необходимости и запрет на постоянное хранение персональных данных в email или мессенджерах. Ни один способ передачи через интернет не является полностью безопасным, но мы стремимся защищать ваши данные во всех случаях.`,
+
+    'privacy.s9.title': '9. Контакты',
+    'privacy.s9.body': `По любым вопросам о конфиденциальности или для реализации ваших прав обращайтесь:\n\n**PT Kusuma Petak Sari (KPS Global Solutions)**\nАдрес: __________\nE-mail: mnc@kpsglobal.id`,
+
+    'privacy.s10.title': '10. Изменения Политики',
+    'privacy.s10.body': `Мы пересматриваем настоящую Политику не реже одного раза в год и при изменении наших операций обработки или применимого законодательства. Актуальная версия всегда доступна на этой странице; дата «Последнее обновление» указана выше.`,
   },
 
   zh: {
@@ -356,16 +438,16 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'services.subtitle': '通过验证的供应链和机构级流程，提供对主要大宗商品市场的结构化准入。',
 
     'services.energy.title': '能源与燃料',
-    'services.energy.desc': 'EN590 (10ppm)、Jet A1、D6、ESPO、乌拉尔。直接接触9家验证供应商，跨越25个操作流程。',
-    'services.energy.details': 'EN590 (10ppm柴油)、Jet A1、D6燃料油和原油(ESPO、乌拉尔)。直接接触9家验证供应商和25个操作流程。为机构客户提供结构化文档和交付协议。',
+    'services.energy.desc': 'EN590 (10ppm) 柴油与 Jet A1 航空燃油。炼厂直供供应链，每一步均有验证文件。',
+    'services.energy.details': 'EN590 (10ppm 柴油) 与 Jet A1 航空燃油。炼厂直供供应链，为机构客户提供结构化文档和交付协议。每个交易对手在合作前均通过制裁与 KYC 筛查。',
 
     'services.gas.title': '天然气 (LNG/LPG)',
-    'services.gas.desc': '基于项目的LNG/LPG供应，结构化30%折扣模型。面向机构买家的长期合同框架。',
-    'services.gas.details': 'LNG和LPG采用双合同结构供应：FOB商品合同加独立物流合同。100%价格透明度。基于项目的供应，面向机构买家采用结构化30%折扣模型。',
+    'services.gas.desc': '基于项目的LNG/LPG供应。面向机构买家的长期合同框架。',
+    'services.gas.details': 'LNG和LPG采用双合同结构供应：FOB商品合同加独立物流合同。完全价格透明，面向机构买家的项目制供应量。',
 
     'services.metals.title': '战略金属',
-    'services.metals.desc': '铝（A7）和硫磺合同供应。标准化交付协议，配备完整合规文件。',
-    'services.metals.details': '铝A7和硫磺合同供应。整个交易链的付款代理保护。标准化交付协议，配备完整合规文件。按机构级程序进行托管和产权转让。',
+    'services.metals.desc': '铝和硫磺合同供应。标准化交付协议，配备完整合规文件。',
+    'services.metals.details': '非受制裁来源的铝和硫磺合同供应。标准化交付协议，配备完整合规文件。结算与产权转让通过持牌银行和独立托管代理进行。',
 
     'services.algorithm.title': 'KPS算法',
     'services.algorithm.step1': '筛选：实体验证、合规检查和背景评估。',
@@ -379,7 +461,7 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'capabilities.subtitle': '超越经纪——我们架构整个交易生命周期。',
 
     'capabilities.paymaster.title': '交易生命周期协调',
-    'capabilities.paymaster.desc': '作为整个交易链的安全交易管理器，KPS负责存储管理、资金核查以及金融工作流程的合规性。',
+    'capabilities.paymaster.desc': 'KPS 作为独立顾问协调整个交易生命周期：通过持牌银行和独立托管代理执行结算纪律、文件核验与金融流程合规。KPS 不持有客户资金。',
 
     'capabilities.investment.title': '投资模型',
     'capabilities.investment.desc': '国际贸易的财务分析和投资建模。具有风险调整收益的结构化交易框架。',
@@ -421,12 +503,9 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'mandate.commodityPlaceholder': '选择商品',
     'mandate.commodityEN590': 'EN590 (10ppm)',
     'mandate.commodityJetA1': 'Jet A1',
-    'mandate.commodityD6': 'D6',
-    'mandate.commodityESPO': 'ESPO',
-    'mandate.commodityUrals': '乌拉尔',
     'mandate.commodityLNG': 'LNG',
     'mandate.commodityLPG': 'LPG',
-    'mandate.commodityAluminum': '铝 (A7)',
+    'mandate.commodityAluminum': '铝',
     'mandate.commoditySulphur': '硫磺',
     'mandate.financial': '财务准备',
     'mandate.financialPlaceholder': '选择工具',
@@ -440,6 +519,9 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
     'mandate.agreePrefix': '我同意遵循',
     'mandate.agreeLink': 'KPS不可谈判的算法',
     'mandate.agreeSuffix': '。',
+    'mandate.privacyConsentPrefix': '我同意根据',
+    'mandate.privacyConsentLink': '隐私政策',
+    'mandate.privacyConsentSuffix': '处理我的个人数据。',
     'mandate.acceptTerms': '同意',
     'mandate.downloadPdf': '下载 PDF 版本',
     'algorithm.termsFull': `KPS GLOBAL SOLUTIONS: 服务条款与交易算法
@@ -454,9 +536,11 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
 
 3. 禁止绕过条款：未经顾问事先书面同意，客户在任何情况下均不得与任何引荐方（供应商、炼油厂或授权代表）接触、谈判或达成交易。此保护在全球范围内有效期为两（2）年。
 
-4. 违约金：任何违反禁止绕过或支付条款的行为将导致立即处以 100,000 美元 的罚款，外加预计总佣金的 100%。
+4. 制裁与出口管制：顾问仅参与非受制裁商品及非受制裁交易对手的交易。所有各方在合作前均须通过 KYC/AML 及制裁筛查（OFAC、EU、UN、UK）。顾问保留拒绝或终止任何存在制裁风险的合作的权利，且不承担任何责任。
 
-5. 管辖权：本条款受香港法律管辖。任何争议应通过香港国际商会 (ICC) 仲裁解决。`,
+5. 违约金：任何违反禁止绕过或支付条款的行为，将按已签署的 TCIA/咨询协议中约定的金额承担违约责任。
+
+6. 管辖权：本条款受香港法律管辖。任何争议应通过香港国际商会 (ICC) 仲裁解决。`,
     'algorithm.termsTitle': 'KPS GLOBAL SOLUTIONS: 服务条款与交易算法',
     'algorithm.scrollHint': '滚动至底部以启用「同意」按钮。',
     'mandate.submit': '请求战略简报',
@@ -466,7 +550,9 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
 
     'footer.companyName': 'KPS Global Solutions',
     'footer.tagline': '构建全球贸易的本质',
-    'footer.registered': 'KPS Global Solutions 是 PT Kusuma Petak Sari 的商业名称，该公司是一家在印度尼西亚注册的咨询公司。我们不提供受监管的金融、银行或汇款服务。我们仅作为交易协调方和顾问开展业务。',
+    'footer.registered': 'KPS Global Solutions 是 PT Kusuma Petak Sari 的商业名称，该公司是一家在印度尼西亚注册的咨询公司。我们不提供受监管的金融、银行或汇款服务，也从不持有客户资金。我们仅作为交易协调方和顾问开展业务，只与非受制裁商品和经筛查的交易对手合作。',
+    'footer.staff': '员工入口',
+    'footer.privacy': '隐私政策',
     'footer.rights': '版权所有。',
     'footer.zeroNoise': '零噪音',
     'footer.noToxic': '无毒链',
@@ -477,5 +563,42 @@ By clicking "I Agree" or proceeding to request services, you (the "Client") ackn
 
     'notFound.title': '页面未找到',
     'notFound.backHome': '返回首页',
+
+    // Privacy Policy
+    'privacy.title': '隐私政策',
+    'privacy.backHome': '返回首页',
+    'privacy.lastUpdatedLabel': '最后更新',
+    'privacy.lastUpdatedDate': '__________',
+    'privacy.intro': `KPS Global Solutions 是 **PT Kusuma Petak Sari**（"KPS"、"我们"）的商业名称，该公司是一家在印度尼西亚共和国注册的咨询公司。本政策说明我们如何处理通过本网站（kpsglobal.id）收集的个人数据，依据 **印度尼西亚共和国 2022 年第 27 号个人数据保护法（UU PDP）** 及国际公认的数据保护原则。\n\n本政策仅涵盖我们通过本网站收集的个人数据。在单独的业务或代理协议下处理的数据，受这些协议及其各自的数据保护条款约束。`,
+
+    'privacy.s1.title': '1. 我们收集的数据',
+    'privacy.s1.body': `当您提交委托 / 战略简报表单时，我们收集您提供的信息：\n\n- 实体名称与管辖区\n- 您的角色（最终买家、委托人或中间人）\n- 感兴趣的商品\n- 财务准备工具（POF / BCL / SBLC）\n- 联系人全名\n- 联系方式（WhatsApp、Telegram 或电话）\n\n当您提交表单或接受条款时，我们还会自动记录有限的技术数据：大致时间戳、所选界面语言、浏览器 user-agent、随机生成的会话标识符，以及我们表单服务商可见的 IP 地址。我们**不会**有意收集特殊类别数据（健康、宗教、生物识别），并请您不要在自由文本字段中填写此类数据。`,
+
+    'privacy.s2.title': '2. 处理目的',
+    'privacy.s2.body': `我们处理您的个人数据用于：\n\n- 回复并评估您的委托或简报请求\n- 开展交易对手尽职调查（KYC）与合规筛查\n- 准备并履行合同及咨询业务\n- 保存法律和会计所需的记录`,
+
+    'privacy.s3.title': '3. 法律依据',
+    'privacy.s3.body': `我们依据您的**同意**（在您勾选同意框并提交表单时给出）、依据您请求下签订合同前采取**必要步骤**的需要，以及我们评估和开展业务的**合法利益**——均在 UU PDP 允许的范围内。`,
+
+    'privacy.s4.title': '4. 共享与跨境传输',
+    'privacy.s4.body': `我们不出售您的个人数据。我们仅与协助我们运营本网站和通讯的服务提供商，以及必要时的专业顾问共享数据。\n\n我们的委托表单通过 **Formspree**（一家在美国运营的表单处理服务）及我们的电子邮件服务商传递。这意味着通过表单提交的数据会被传输并存储在印度尼西亚境外的服务器上。我们采取合理措施，确保此类传输受到适当保障，其保护水平与 UU PDP 一致。`,
+
+    'privacy.s5.title': '5. 数据保留',
+    'privacy.s5.body': `我们仅在实现上述目的所必需的期间内保留个人数据：咨询和尽职调查记录自我们最后一次互动起最多保留五（5）年；与合同相关的数据保留至合同期限加适用的时效期。之后，数据将被删除或匿名化。`,
+
+    'privacy.s6.title': '6. 您的权利',
+    'privacy.s6.body': `根据 UU PDP，您可以请求访问、更正、更新、删除或限制处理您的个人数据，随时撤回同意，并反对某些处理。要行使上述任何权利，请通过第 9 节中的联系方式与我们联系。我们将在适用法律要求的期限内答复。`,
+
+    'privacy.s7.title': '7. Cookies 与跟踪',
+    'privacy.s7.body': `本网站**不**使用广告或跟踪 Cookie。我们仅在您浏览器的本地存储中保存一项功能性偏好（您选择的语言），以便网站记住您的语言。此类严格功能性用途无需同意横幅。`,
+
+    'privacy.s8.title': '8. 数据安全',
+    'privacy.s8.body': `我们采取与风险相称的技术和组织措施，包括传输加密（TLS）、按需知密的访问原则，以及禁止将个人数据长期存储在电子邮件或即时通讯工具中。互联网上没有任何传输方式是完全安全的，但我们始终致力于保护您的数据。`,
+
+    'privacy.s9.title': '9. 联系我们',
+    'privacy.s9.body': `如有任何隐私问题或需行使您的权利，请联系：\n\n**PT Kusuma Petak Sari (KPS Global Solutions)**\n地址：__________\n电子邮件：mnc@kpsglobal.id`,
+
+    'privacy.s10.title': '10. 本政策的变更',
+    'privacy.s10.body': `我们至少每年审查一次本政策，并在我们的处理操作或适用法律发生变化时进行审查。最新版本始终可在本页面查看，上方显示"最后更新"日期。`,
   },
 };

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import DaisyMotif from './DaisyMotif';
+import Reveal from '@/hooks/use-reveal';
 import { Fuel, Flame, Diamond } from 'lucide-react';
 import {
   Dialog,
@@ -60,27 +61,28 @@ const ServicesSection: React.FC = () => {
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {services.map((service) => {
+          {services.map((service, i) => {
             const Icon = service.icon;
             return (
-              <button
-                key={service.titleKey}
-                type="button"
-                onClick={() => setOpenModal(service.titleKey)}
-                className="text-left bg-secondary/50 border border-border/60 p-8 md:p-10 group hover:bg-secondary/70 hover:border-border transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:ring-offset-2 focus:ring-offset-background rounded-sm"
-              >
-                <Icon
-                  size={24}
-                  className="text-foreground/70 mb-6 group-hover:text-foreground transition-colors"
-                  strokeWidth={1.5}
-                />
-                <h3 className="font-semibold text-base text-foreground mb-4">
-                  {t(service.titleKey)}
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {t(service.descKey)}
-                </p>
-              </button>
+              <Reveal key={service.titleKey} delay={i * 120} as="div">
+                <button
+                  type="button"
+                  onClick={() => setOpenModal(service.titleKey)}
+                  className="w-full h-full text-left bg-secondary/50 border border-border/60 p-8 md:p-10 group hover:bg-secondary/70 hover:border-primary/30 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:ring-offset-2 focus:ring-offset-background rounded-sm"
+                >
+                  <Icon
+                    size={24}
+                    className="text-foreground/70 mb-6 group-hover:text-primary transition-colors"
+                    strokeWidth={1.5}
+                  />
+                  <h3 className="font-semibold text-base text-foreground mb-4">
+                    {t(service.titleKey)}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {t(service.descKey)}
+                  </p>
+                </button>
+              </Reveal>
             );
           })}
         </div>
