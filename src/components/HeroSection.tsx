@@ -5,7 +5,10 @@ import { ArrowRight } from 'lucide-react';
 const HeroSection: React.FC = () => {
   const { t } = useLanguage();
 
-  const markets = ['Singapore', 'China', 'Hong Kong', 'Malaysia', 'USA', 'UAE', 'India', 'Indonesia'];
+  const markets = [
+    'geo.singapore', 'geo.china', 'geo.hongkong', 'geo.malaysia',
+    'geo.usa', 'geo.uae', 'geo.india', 'geo.indonesia',
+  ];
 
   return (
     <section className="relative min-h-[92vh] flex items-center overflow-hidden border-b border-border">
@@ -70,7 +73,7 @@ const HeroSection: React.FC = () => {
           <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
             {markets.map((m) => (
               <span key={m} className="text-sm text-foreground/70 font-medium">
-                {m}
+                {t(m)}
               </span>
             ))}
           </div>

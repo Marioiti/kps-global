@@ -4,14 +4,17 @@ import Reveal from '@/hooks/use-reveal';
 import { Layers, Globe } from 'lucide-react';
 
 const offices = [
-  { city: 'Sanya', country: 'China' },
-  { city: 'Denpasar', country: 'Indonesia' },
-  { city: 'Moscow', country: 'Russia' },
-  { city: 'Chicago', country: 'USA' },
-  { city: 'Dubai', country: 'UAE' },
+  { cityKey: 'city.sanya', countryKey: 'geo.china' },
+  { cityKey: 'city.denpasar', countryKey: 'geo.indonesia' },
+  { cityKey: 'city.moscow', countryKey: 'geo.russia' },
+  { cityKey: 'city.chicago', countryKey: 'geo.usa' },
+  { cityKey: 'city.dubai', countryKey: 'geo.uae' },
 ];
 
-const markets = ['Singapore', 'China', 'Hong Kong', 'Malaysia', 'USA', 'UAE', 'India', 'Indonesia'];
+const markets = [
+  'geo.singapore', 'geo.china', 'geo.hongkong', 'geo.malaysia',
+  'geo.usa', 'geo.uae', 'geo.india', 'geo.indonesia',
+];
 
 const CapabilitiesSection: React.FC = () => {
   const { t } = useLanguage();
@@ -57,9 +60,9 @@ const CapabilitiesSection: React.FC = () => {
             </span>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-4">
               {offices.map((o) => (
-                <div key={o.city}>
-                  <div className="text-foreground font-semibold">{o.city}</div>
-                  <div className="text-xs text-muted-foreground uppercase tracking-wide">{o.country}</div>
+                <div key={o.cityKey}>
+                  <div className="text-foreground font-semibold">{t(o.cityKey)}</div>
+                  <div className="text-xs text-muted-foreground uppercase tracking-wide">{t(o.countryKey)}</div>
                 </div>
               ))}
             </div>
@@ -80,7 +83,7 @@ const CapabilitiesSection: React.FC = () => {
                 key={m}
                 className="px-3 py-1.5 text-sm text-foreground/80 border border-border rounded-sm bg-background"
               >
-                {m}
+                {t(m)}
               </span>
             ))}
           </div>
