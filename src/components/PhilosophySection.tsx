@@ -11,6 +11,13 @@ const AboutSection: React.FC = () => {
     { titleKey: 'about.p3.title', descKey: 'about.p3.desc' },
   ];
 
+  const stats = [
+    { value: '2017', labelKey: 'stats.since' },
+    { value: '$2B+', labelKey: 'stats.volume' },
+    { value: '32+', labelKey: 'stats.deals' },
+    { value: '7', labelKey: 'stats.countries' },
+  ];
+
   return (
     <section id="about" className="py-32 relative">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -27,10 +34,33 @@ const AboutSection: React.FC = () => {
         </h2>
 
         {/* Lead */}
-        <div className="mb-20 max-w-3xl">
+        <div className="mb-12 max-w-3xl space-y-5">
           <p className="text-muted-foreground text-lg leading-relaxed">
             {t('about.lead')}
           </p>
+          <p className="text-muted-foreground leading-relaxed">
+            {t('about.team')}
+          </p>
+        </div>
+
+        {/* Stats band */}
+        <Reveal className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-border/40 overflow-hidden rounded-sm mb-8">
+          {stats.map((s) => (
+            <div key={s.labelKey} className="bg-background p-7 md:p-8">
+              <div className="text-3xl md:text-4xl font-extrabold tracking-tight text-foreground tabular-nums">
+                {s.value}
+              </div>
+              <div className="mt-2 text-xs tracking-[0.12em] uppercase text-muted-foreground leading-snug">
+                {t(s.labelKey)}
+              </div>
+            </div>
+          ))}
+        </Reveal>
+
+        {/* Clients */}
+        <div className="mb-20 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+          <span className="w-6 h-px bg-accent translate-y-[-3px]" aria-hidden="true" />
+          <span className="text-sm text-muted-foreground">{t('about.clients')}</span>
         </div>
 
         {/* Three principles */}

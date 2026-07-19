@@ -25,6 +25,14 @@ export const translations: Record<Language, Record<string, string>> = {
     'about.title': 'Operational depth, without the payroll',
     'about.lead':
       'KPS Global is a boutique management-consulting practice led by a team of seasoned professionals from a range of industries. We embed alongside your team to run the operational and transactional work that moves a cross-border deal or venture from intent to completion — structuring, counterparty engagement, compliance and documentation — with the discipline of an in-house operator and the independence of an outside adviser.',
+    'about.team':
+      'A core team of seven — specialists in management, finance, law, international supply, logistics and fuel.',
+    'about.clients':
+      'We work with investors, fuel and state-owned companies, funds and corporations.',
+    'stats.since': 'Operating since',
+    'stats.volume': 'Supported deal value, 5 yrs',
+    'stats.deals': 'Transactions structured',
+    'stats.countries': 'Countries · 5 offices',
     'about.p1.title': 'Independent by design',
     'about.p1.desc':
       'We advise and coordinate — we do not take title, trade on our own book, or sit inside the payment chain. Your interests are the only ones we carry.',
@@ -106,11 +114,15 @@ export const translations: Record<Language, Record<string, string>> = {
 
     'sectors.industries.title': 'Sectors',
     'sectors.industries.desc':
-      'Energy & LNG, non-ferrous metals (aluminium), industrial commodities (sulphur), and international project delivery.',
+      'Energy & LNG, fuel, non-ferrous metals (aluminium), industrial commodities (sulphur), and international project delivery & management.',
 
     'sectors.geographies.title': 'Geographies',
     'sectors.geographies.desc':
       'Active across Singapore, China, Hong Kong, Malaysia, the United States, the UAE, India and Indonesia — structuring engagements that bridge jurisdictions, languages and compliance regimes.',
+    'sectors.presenceTitle': 'Global presence',
+    'sectors.officesLabel': 'Offices',
+    'sectors.marketsLabel': 'Markets we serve',
+    'sectors.entitiesNote': 'Registered entities in China, Indonesia, Russia and the USA.',
 
     // Governance & Compliance
     'governance.sectionLabel': 'Governance',
@@ -239,6 +251,14 @@ export const translations: Record<Language, Record<string, string>> = {
     'about.title': 'Операционная глубина без штата',
     'about.lead':
       'KPS Global — бутиковая консалтинговая практика под руководством команды профессионалов из разных отраслей. Мы встраиваемся в вашу команду и берём на себя операционную и сделочную работу, которая двигает трансграничную сделку или проект от намерения к результату — структурирование, работу с контрагентами, комплаенс и документацию — с дисциплиной внутреннего операционного руководителя и независимостью внешнего советника.',
+    'about.team':
+      'Ключевая команда из семи человек — специалисты в управленческом менеджменте, финансах, праве, международных поставках, логистике и топливе.',
+    'about.clients':
+      'Мы работаем с инвесторами, топливными и государственными компаниями, фондами и корпорациями.',
+    'stats.since': 'На рынке с',
+    'stats.volume': 'Объём сделок за 5 лет',
+    'stats.deals': 'Сопровождённых сделок',
+    'stats.countries': 'Стран · 5 офисов',
     'about.p1.title': 'Независимость по определению',
     'about.p1.desc':
       'Мы консультируем и координируем — не берём титул на товар, не торгуем на свою книгу и не входим в платёжную цепочку. Мы несём только ваши интересы.',
@@ -320,11 +340,15 @@ export const translations: Record<Language, Record<string, string>> = {
 
     'sectors.industries.title': 'Секторы',
     'sectors.industries.desc':
-      'Энергоносители и СПГ, цветные металлы (алюминий), промышленные товары (сера) и реализация международных проектов.',
+      'Энергоносители и СПГ, топливо, цветные металлы (алюминий), промышленные товары (сера), реализация и управление международными проектами.',
 
     'sectors.geographies.title': 'География',
     'sectors.geographies.desc':
       'Работаем в Сингапуре, Китае, Гонконге, Малайзии, США, ОАЭ, Индии и Индонезии — структурируем проекты, соединяющие юрисдикции, языки и комплаенс-режимы.',
+    'sectors.presenceTitle': 'Глобальное присутствие',
+    'sectors.officesLabel': 'Офисы',
+    'sectors.marketsLabel': 'Рынки, где мы работаем',
+    'sectors.entitiesNote': 'Юридические лица в Китае, Индонезии, России и США.',
 
     // Governance
     'governance.sectionLabel': 'Управление и комплаенс',
@@ -453,6 +477,14 @@ export const translations: Record<Language, Record<string, string>> = {
     'about.title': '运营深度，无需扩编',
     'about.lead':
       'KPS Global 是一家精品管理咨询机构，由来自不同行业的资深专业团队领导。我们融入您的团队，承担推动跨境交易或项目从意向走向落地的运营与交易工作——结构化、交易对手对接、合规与文档——兼具内部运营者的纪律与外部顾问的独立性。',
+    'about.team':
+      '七人核心团队——涵盖管理、财务、法律、国际供应、物流与燃料领域的专家。',
+    'about.clients':
+      '我们的客户包括投资者、燃料与国有企业、基金及企业集团。',
+    'stats.since': '成立于',
+    'stats.volume': '五年交易额',
+    'stats.deals': '完成交易',
+    'stats.countries': '国家 · 5 个办公室',
     'about.p1.title': '天生独立',
     'about.p1.desc':
       '我们只提供咨询与协调——不持有货权、不自营交易、不进入支付链条。我们只承载您的利益。',
@@ -534,11 +566,15 @@ export const translations: Record<Language, Record<string, string>> = {
 
     'sectors.industries.title': '领域',
     'sectors.industries.desc':
-      '能源与 LNG、有色金属（铝）、工业大宗商品（硫磺），以及国际项目交付。',
+      '能源与 LNG、燃料、有色金属（铝）、工业大宗商品（硫磺），以及国际项目交付与管理。',
 
     'sectors.geographies.title': '地域',
     'sectors.geographies.desc':
       '活跃于新加坡、中国、香港、马来西亚、美国、阿联酋、印度与印度尼西亚——构建横跨司法辖区、语言与合规体系的合作。',
+    'sectors.presenceTitle': '全球布局',
+    'sectors.officesLabel': '办公室',
+    'sectors.marketsLabel': '服务市场',
+    'sectors.entitiesNote': '在中国、印度尼西亚、俄罗斯与美国设有注册实体。',
 
     // Governance
     'governance.sectionLabel': '治理与合规',

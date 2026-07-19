@@ -3,21 +3,18 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import Reveal from '@/hooks/use-reveal';
 import { Layers, Globe } from 'lucide-react';
 
+const offices = [
+  { city: 'Sanya', country: 'China' },
+  { city: 'Denpasar', country: 'Indonesia' },
+  { city: 'Moscow', country: 'Russia' },
+  { city: 'Chicago', country: 'USA' },
+  { city: 'Dubai', country: 'UAE' },
+];
+
+const markets = ['Singapore', 'China', 'Hong Kong', 'Malaysia', 'USA', 'UAE', 'India', 'Indonesia'];
+
 const CapabilitiesSection: React.FC = () => {
   const { t } = useLanguage();
-
-  const capabilities = [
-    {
-      titleKey: 'sectors.industries.title',
-      descKey: 'sectors.industries.desc',
-      icon: Layers,
-    },
-    {
-      titleKey: 'sectors.geographies.title',
-      descKey: 'sectors.geographies.desc',
-      icon: Globe,
-    },
-  ];
 
   return (
     <section id="sectors" className="py-32 relative">
@@ -32,34 +29,62 @@ const CapabilitiesSection: React.FC = () => {
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
           {t('sectors.title')}
         </h2>
-        <p className="text-muted-foreground text-lg max-w-2xl mb-20">
+        <p className="text-muted-foreground text-lg max-w-2xl mb-16">
           {t('sectors.subtitle')}
         </p>
 
-        <div className="grid md:grid-cols-2 gap-px bg-border/30 overflow-hidden rounded-sm">
-          {capabilities.map((cap, i) => {
-            const Icon = cap.icon;
-            return (
-              <Reveal
-                key={cap.titleKey}
-                delay={i * 140}
-                className="bg-background p-10 md:p-16 group hover:bg-secondary/20 transition-colors duration-500"
-              >
-                <Icon
-                  size={32}
-                  className="text-primary/40 mb-8 group-hover:text-primary transition-colors duration-500"
-                  strokeWidth={1.5}
-                />
-                <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-4">
-                  {t(cap.titleKey)}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  {t(cap.descKey)}
-                </p>
-              </Reveal>
-            );
-          })}
+        {/* Sectors + Global presence */}
+        <div className="grid lg:grid-cols-2 gap-px bg-border/30 overflow-hidden rounded-sm mb-12">
+          {/* Sectors */}
+          <Reveal className="bg-background p-10 md:p-14">
+            <Layers size={30} className="text-primary/40 mb-8" strokeWidth={1.5} />
+            <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-foreground mb-4">
+              {t('sectors.industries.title')}
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              {t('sectors.industries.desc')}
+            </p>
+          </Reveal>
+
+          {/* Global presence */}
+          <Reveal delay={140} className="bg-background p-10 md:p-14">
+            <Globe size={30} className="text-primary/40 mb-8" strokeWidth={1.5} />
+            <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-foreground mb-6">
+              {t('sectors.presenceTitle')}
+            </h3>
+            <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold block mb-4">
+              {t('sectors.officesLabel')}
+            </span>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-4">
+              {offices.map((o) => (
+                <div key={o.city}>
+                  <div className="text-foreground font-semibold">{o.city}</div>
+                  <div className="text-xs text-muted-foreground uppercase tracking-wide">{o.country}</div>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 pt-6 border-t border-border/60 text-sm text-muted-foreground">
+              {t('sectors.entitiesNote')}
+            </p>
+          </Reveal>
         </div>
+
+        {/* Markets */}
+        <Reveal className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
+          <span className="text-xs tracking-[0.2em] uppercase text-primary/70 font-semibold shrink-0">
+            {t('sectors.marketsLabel')}
+          </span>
+          <div className="flex flex-wrap gap-2">
+            {markets.map((m) => (
+              <span
+                key={m}
+                className="px-3 py-1.5 text-sm text-foreground/80 border border-border rounded-sm bg-background"
+              >
+                {m}
+              </span>
+            ))}
+          </div>
+        </Reveal>
       </div>
     </section>
   );
